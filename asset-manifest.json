@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bola-nabil/static/css/main.7581d24d.css",
+    "main.js": "/bola-nabil/static/js/main.e05702da.js",
+    "static/js/787.28cb0dcd.chunk.js": "/bola-nabil/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/bola-nabil/index.html",
+    "main.7581d24d.css.map": "/bola-nabil/static/css/main.7581d24d.css.map",
+    "main.e05702da.js.map": "/bola-nabil/static/js/main.e05702da.js.map",
+    "787.28cb0dcd.chunk.js.map": "/bola-nabil/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7581d24d.css",
+    "static/js/main.e05702da.js"
+  ]
+}
