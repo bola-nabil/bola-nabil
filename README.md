@@ -3,6 +3,10 @@
   <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=bola-nabil&&show_icons=true&theme=dark" alt="GitHub Stats" height="175">
   <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=bola-nabil&layout=compact&theme=dark" alt="Top Langs" height="175">
 </div>
+<br />
+<div align="center">
+  <a href="https://www.github.com/bola-nabil"><img src="https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&stroke=ffffff&background=1d2a3a&ring=5BCDEC&fire=5BCDEC&currStreakNum=ffffff&currStreakLabel=5BCDEC&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+</div>
     
 ## ⚡ MY Skills
 <table align="center">
