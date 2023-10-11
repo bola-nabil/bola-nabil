@@ -95,11 +95,13 @@
     </td>
   </tr>
 </table>
-</p>
+<br />
+<hr />
+<div class="contact">
+<h2>Contact</p>
+<a href = "mailto:bolanabil404@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/bolanabil/" target="_blank" align="center"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+</div>
 <br><p align="center"><b>Visitors Count</b></p>  
 <p align="center"><img align="center" src="https://profile-counter.glitch.me/{bola-nabil}/count.svg" /></p> 
 <br>
-</div>
-<a href = "mailto:bolanabil404@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-  <a href="https://www.linkedin.com/in/bolanabil/" target="_blank" align="center"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-<a href="https://leetcode.com/bola-nabil/"><img src="profile-imgs/leetcode.png"target="_blank"/></a>
