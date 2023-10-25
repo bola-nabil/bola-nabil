@@ -5,7 +5,7 @@
 </div>
 <br />
 <div align="center">
-<a href="https://www.github.com/bola-nabil"><img src="https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&stroke=ffffff&background=233142&ring=e22822&fire=e22822&currStreakNum=ffffff&currStreakLabel=e22822&sideNums=ffffff&sideLabels=e22822&dates=ffffff&hide_border=false"/></a>
+<a href="https://www.github.com/bola-nabil"><img src=https://github-readme-streak-stats.herokuapp.com?user=bola-nabil&stroke=ffffff&background=233142&ring=e22822&fire=e22822&currStreakNum=ffffff&currStreakLabel=e22822&sideNums=ffffff&sideLabels=e22822&dates=ffffff&hide_border=false"/></a>
 </div>
     
 ## ⚡ MY Skills
