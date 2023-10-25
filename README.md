@@ -5,7 +5,7 @@
 </div>
 <br />
 <div align="center">
-<a href="https://www.github.com/bola-nabil"><img src="https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&stroke=ffffff&background=1d2a3a&ring=5BCDEC&fire=5BCDEC&currStreakNum=ffffff&currStreakLabel=5BCDEC&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=false" /></a>
+<a href="https://www.github.com/bola-nabil"><img src="https://github-readme-streak-stats.herokuapp.com/?user=Din-sin&stroke=ffffff&background=1d2a3a&ring=5BCDEC&fire=5BCDEC&currStreakNum=ffffff&currStreakLabel=5BCDEC&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 </div>
     
 ## ⚡ MY Skills
@@ -96,6 +96,10 @@
   </tr>
 </table>
 <br />
+<hr />
+
+[![Dunsin's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=bola-nabil&bg_color=1d2a3a&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true)](https://github.com/bola-nabil/Code-Magic)
+
 <hr />
 <div class="contact">
 <h2>Contact</p>
