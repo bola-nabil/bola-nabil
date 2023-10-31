@@ -48,30 +48,60 @@ li {
     background-size: cover;
     height: 100vh;
 }
-/* Home */
-/* .contanier .main {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+
+.header {
+    position: relative;
 }
 
-.main p {
-    font-size: 48px;
-    font-weight: bold;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo {
+    display: flex;
+    height: 72px;
     color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
 }
 
-.main p span {
+.header nav {
+    display: flex;
+}
+
+.header nav li {
+    position: relative;
+    height: 72px;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 0 30px;
+    overflow: hidden;
 }
 
-.main img {
-    width: 300px;
-    height: 300px;
-} */
+.header .headLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.header .active {
+    color: #ec195a;
+}
+.header .headLink:hover {
+    color: #ec195a;
+    transition: 0.5;
+    -webkit-transition: 0.5;
+    -moz-transition: 0.5;
+    -ms-transition: 0.5;
+    -o-transition: 0.5;
+}
+.header .box .navIcon {
+    padding-right: 8px;
+}
