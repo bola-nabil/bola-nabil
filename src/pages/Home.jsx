@@ -101,10 +101,10 @@ class Home extends Component {
                                 </div>
                                 <div className='contactBox'>
                                     <div className='contactMe'>
-                                        <Link to='/contact'>Contact Me</Link>
+                                        <Link className='contactLink' to='/contact'>Contact Me</Link>
                                     </div>
                                     <div className='myProjects'>
-                                        <Link to='/projects'>My Projects</Link>
+                                        <Link className='projectLink' to='/projects'>My Projects</Link>
                                     </div>
                                 </div>
                             </div>
