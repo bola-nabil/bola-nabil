@@ -173,7 +173,7 @@ section .content .title span {
 }
 
 section .content .about {
-    color: var(--second-color);
+    color: #d4d4d4;
     font-size: 16px;
     width: 65%;
 }
@@ -207,6 +207,7 @@ section .aboutLinks .titleIcon:hover {
 
 section .contactBox {
     display: flex;
+    margin-top: 20px;
 }
 
 section .contactBox a {
@@ -224,8 +225,6 @@ section .contactBox .myProjects {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 section .contactBox .contactMe {
@@ -234,4 +233,87 @@ section .contactBox .contactMe {
 
 section .contactBox .myProjects {
     background-color: var(--second-color);
+    margin-left: 20px;
+}
+
+section .contactBox .contactLink,
+section .contactBox .projectLink {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section .contactBox .contactLink {
+    color: var(--second-color);
+}
+
+section .contactBox .projectLink {
+    color: var(--main-color);
+}
+
+@media (max-width: 767px)  {
+    section {
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 50px 120px;
+    }
+    section .image {
+        width: 250px;
+        margin-left: 50px;
+    }
+    section .content h1 {
+        font-size: 30px;
+    }
+    section .content .title {
+        font-size: 18px;
+    }
+    section .content .about {
+        width: 100%;
+        font-size: 12px;
+    }
+    section .aboutLinks ul {
+        width: 70%;
+        margin-left: 20px;
+    }
+    section .contactBox .contactMe,
+    section .contactBox .myProjects {
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+}
+    section .contactBox .contactLink,
+    section .contactBox .projectLink {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 992px) {
+    section {
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 50px 100px;
+    }
+    section .image {
+        margin-left: 80px;
+    }
+    section .content {
+    }
+    section .content .title {
+        margin-top: 5px;
+    }
+    section .content .about {
+        margin-left: 170px;
+    }
+    section .aboutLinks ul {
+        margin-left: 270px;
+    }
+    section .contactBox {
+        margin-left: 200px;
+    }
 }
