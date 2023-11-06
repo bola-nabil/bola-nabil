@@ -684,6 +684,107 @@ section .contactBox .projectLink {
     }
 }
 /* End Contact Page */
+/* Start Project Page*/
+.projectSection {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.projectSection .projectBox {
+    position: relative;
+    box-shadow: 5px 5px 10px #b9b5b5;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.projectSection .projectImage::after {
+    content: "";
+    position: absolute;
+    background-color: teal;
+    width: 280px;
+    height: 220px;
+    visibility: hidden;
+}
+
+.projectSection .projectImage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectSection .projectImage:hover {
+    visibility: visible;
+    cursor: pointer;
+}
+/* .projectSection .projectLinks {
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.projectSection .projectLinks .userLink {
+    text-decoration: none;
+}
+
+.projects .projectIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectSection .projectIcon {
+    color: var(--main-color);
+    font-size: 15px;
+    margin: 0 5px;
+    box-shadow: 5px 5px 10px #b9b5b5;
+}
+
+.projectSection .projectImage {
+    position: relative;
+}
+.project .projectImage::before {
+    content: "";
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 280px;
+    height: 220px;
+    background-color: rgb(235, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects .projectImage img {
+    width: 100%;
+}
+
+.projectSection .projectLinks:hover{
+    cursor: pointer;
+    animation: top 2s linear;
+    -webkit-animation: top 5s linear;
+} */
+
+
+/* End Project Page */
 /* Start Footer */
 footer {
     display: flex;
