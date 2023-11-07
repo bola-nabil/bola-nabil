@@ -138,6 +138,9 @@ li {
     overflow: hidden;
 }
 @media (max-width: 992px) {
+    .header nav {
+        visibility: hidden;
+    }
     .header nav li {
         padding: 0 15px;
     }
@@ -164,11 +167,10 @@ li {
 }
 @media (max-width: 767px) {
     .header .logo {
-        width: 100%;
         height: 50px;
     }
     .header nav {
-        margin: auto;
+        visibility: hidden;
     }
     .header nav li {
         font-size: 13px;
@@ -176,8 +178,36 @@ li {
         height: 40px;
     }
 }
+.homeFlex {
+    position: relative;
+}
+.homeSection {
+    display: grid;
+    grid-template-columns: 300px auto;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+    header nav {
+        display: none;
+    }
 
-section {
+    .homeSection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 90px;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+/* section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,7 +387,7 @@ section .contactBox .projectLink {
     section .contactBox {
         margin-left: 200px;
     }
-}
+} */
 /* End Home */
 
 /* Start About */
@@ -690,55 +720,51 @@ section .contactBox .projectLink {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 40px;
 }
 
 .projectSection .projectBox {
-    position: relative;
     box-shadow: 5px 5px 10px #b9b5b5;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    background-color: #ededed;
+}
+.projectSection .projectTitle {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ededed;
 }
 
-.projectSection .projectImage::after {
-    content: "";
-    position: absolute;
-    background-color: teal;
-    width: 280px;
-    height: 220px;
-    visibility: hidden;
+.projectSection .projectTitle h2 {
+    font-size: 20px;
+    color: var(--header-color);
 }
 
-.projectSection .projectImage {
+.projectSection .projectLinks {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ededed;
+    padding: 20px 0;
 }
-
-.projectSection .projectImage:hover {
-    visibility: visible;
-    cursor: pointer;
-}
-/* .projectSection .projectLinks {
+.projectSection .projectLinks::before {
+    content: "";
     position: absolute;
-    width: 280px;
-    height: 220px;
-    background-color: rgb(235, 233, 233);
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 85px;
+    background-color: #ddd;
+}
+.projectLinks .projectIcon {
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
-}
-
-.projectSection .projectLinks .userLink {
-    text-decoration: none;
-}
-
-.projects .projectIcon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -746,44 +772,15 @@ section .contactBox .projectLink {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: var(--second-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.projectSection .projectIcon {
-    color: var(--main-color);
-    font-size: 15px;
+    background-color: var(--main-color);
     margin: 0 5px;
-    box-shadow: 5px 5px 10px #b9b5b5;
 }
-
-.projectSection .projectImage {
-    position: relative;
+.projectLinks .projectIcon .icon {
+    color: var(--second-color);
 }
-.project .projectImage::before {
-    content: "";
-    position: absolute;
-    left: 200px;
-    top: 100px;
-    width: 280px;
-    height: 220px;
-    background-color: rgb(235, 233, 233);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.projects .projectImage img {
+.projectSection .projectImage img {
     width: 100%;
 }
-
-.projectSection .projectLinks:hover{
-    cursor: pointer;
-    animation: top 2s linear;
-    -webkit-animation: top 5s linear;
-} */
-
-
 /* End Project Page */
 /* Start Footer */
 footer {
