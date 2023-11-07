@@ -64,51 +64,53 @@ class Home extends Component {
                                 </div>
                             </nav>
                         </div>
-                        <section>
-                            <div className='image'>
-                                <img src={require("../photos/myPhoto.jpg")} alt="not found" />
-                            </div>
-                            <div className='content'>
-                                <div className='intro'>
-                                    <h1>Bola Nabil</h1>
-                                    <p className='title'>I'm a <span>Software Engineer</span></p>
-                                    <p className='about'>I'm a Web Designer. over 3 years of experience.
-                                    Experienced with all stages of the development cycle for dynamic web projects.</p>
-                                </div>
-                                <div className='aboutLinks'>
-                                    <ul>
-                                        <li>
-                                            <Link className='titleLink' to='https://facebook.com/bolanabil404' target='_blank'>
-                                                <FontAwesomeIcon className='titleIcon' icon={faFacebook} />
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='https://twitter.com/bolaNabil_' target='_blank'>
-                                                <FontAwesomeIcon className='titleIcon' icon={faTwitter} />
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='https://linkedin.com/in/bolanabil' target='_blank'>
-                                                <FontAwesomeIcon className='titleIcon' icon={faLinkedin} />
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link to='https://github.com/bola-nabil' target='_blank'>
-                                                <FontAwesomeIcon className='titleIcon' icon={faGithub} />
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className='contactBox'>
-                                    <div className='contactMe'>
-                                        <Link className='contactLink' to='/contact'>Contact Me</Link>
+                            <div className='homeFlex'>
+                                <div className='homeSection'>
+                                    <div className='imageBox'>
+                                        <img src={require('../photos/myPhoto.jpg')} alt="not found" />
                                     </div>
-                                    <div className='myProjects'>
-                                        <Link className='projectLink' to='/projects'>My Projects</Link>
+                                    <div className='defAbout'>
+                                        <div className='defTitle'>
+                                            <h1>Bola Nabil</h1>
+                                            <span className='first'>I'm a</span>
+                                            <span className='second'>Software Engineer</span>
+                                        </div>
+                                        <div className='defMe'>
+                                            <p>I'm a Web Designer. over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                                        </div>
+                                        <div className='defLinks'>
+                                            <Link to='https://www.facebook.com/bolanabil404' target='_blank'>
+                                                <div className='defIcon'>
+                                                    <FontAwesomeIcon className='icon' icon={faFacebook}/>
+                                                </div>
+                                            </Link>
+                                            <Link to='https://www.twitter.com/bolaNabil_' target='_blank'>
+                                                <div className='defIcon'>
+                                                    <FontAwesomeIcon className='icon' icon={faTwitter}/>
+                                                </div>
+                                            </Link>
+                                            <Link to='https://www.linkedin.com/in/bolanabil' target='_blank'>
+                                                <div className='defIcon'>
+                                                    <FontAwesomeIcon className='icon' icon={faLinkedin}/>
+                                                </div>
+                                            </Link>
+                                            <Link to='https://www.github.com/bola-nabil' target='_blank'>
+                                                <div className='defIcon'>
+                                                    <FontAwesomeIcon className='icon' icon={faGithub}/>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                        <div className='defBtn'>
+                                            <div className='contactMe'>
+                                                <Link to='/contact'>Contact Me</Link>
+                                            </div>
+                                            <div className='myProjects'>
+                                                <Link to='/projects'>My Projects</Link>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                    </section>
                     </div>
                 </div>
             </React.Fragment>
