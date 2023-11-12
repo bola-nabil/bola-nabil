@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import Footer from './Footer';
 
 class Contact extends Component {
     state = {  } 
@@ -64,9 +65,7 @@ class Contact extends Component {
                         </div>
                     </div>
                 </div>
-                <footer>
-                    <p>&copy; 2023 Bola Nabil  -  All rights reserved.</p>
-                </footer>
+                <Footer />
             </div>
         );
     }

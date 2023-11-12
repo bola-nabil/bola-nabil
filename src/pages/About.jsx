@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 class About extends Component {
     state = {  } 
@@ -114,6 +115,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         );
     }

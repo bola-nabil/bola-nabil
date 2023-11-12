@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 class Resume extends Component {
     state = {  } 
     render() { 
@@ -259,6 +260,7 @@ class Resume extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }
