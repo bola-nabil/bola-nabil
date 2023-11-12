@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom/client';
 // import * as ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
+import './css/global.css';
+import './css/home.css';
+import './css/about.css';
+import './css/resume.css';
+import './css/projects.css';
+import './css/contact.css';
+import './css/footer.css';
 
-import './css/main.css';
 // import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import reportWebVitals from './reportWebVitals';
 // import Home from './pages/Home';
@@ -18,6 +24,5 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
 
 reportWebVitals();
