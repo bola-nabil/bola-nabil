@@ -1,0 +1,180 @@
+.contactSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.contactSection .contactLocation,
+.contactSection .contactPhone,
+.contactSection .contactEmail {
+    position: relative;
+    box-shadow: 5px 5px 10px #b9b5b5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 778px) and (max-width: 992px) {
+    .contactSection .contactEmail {
+        margin-left: 180px;
+        width: 300px;
+    }
+}
+.contactSection .contactLocation:hover{
+    animation: up-to-down 2s linear;
+    -webkit-animation: up-to-down 2s linear;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.contactSection .contactIcon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contactSection .contactIcon .icon {
+    font-size: 30px;
+    color: var(--second-color);
+}
+
+.contactSection h2 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--header-color);
+    margin-bottom: 15px;
+}
+
+.contactSection p,
+.contactSection .mailContact {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--header-color)
+}
+
+.contactSection .mailContact:hover,
+.contactSection .phoneNumber:hover{
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.contactMessage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.contactMessage .messageBox {
+    box-shadow: 5px 5px 10px #b9b5b5;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.contactMessage .messageBox input[type='text'],
+.contactMessage .messageBox input[type='email'],
+.contactMessage .messageBox textarea {
+    border-width: 2px;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-color: #ddd6d6;
+    font-size: 17px;
+    margin-top: 25px;
+    padding: 10px 0;
+}
+.contactMessage .messageBox input[type='email'] {
+    margin-left: 20px;
+}
+.contactMessage .messageBox textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 25px;
+}
+.contactMessage .messageBox input:focus,
+.contactMessage .messageBox textarea:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+.contactMessage .messageBox .submit input[type='submit'] {
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contactMessage .messageBox .submit input[type='submit']:hover {
+    color: var(--main-color);
+    background-color: #fbfbfb;
+    border: 1px solid var(--main-color);
+    transition: 0.6s linear;
+    -webkit-transition: 0.6s linear;
+    -moz-transition: 0.6s linear;
+    -ms-transition: 0.6s linear;
+    -o-transition: 0.6s linear;
+}
+.contactMessage .mapBox {
+    box-shadow: 5px 5px 10px #b9b5b5;
+}
+
+.contactMessage .mapBox iframe {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+    .contactMessage {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .contactMessage .messageBox input[type='email'] {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .contactMessage .messageBox textarea {
+        width: 100%;
+    }
+}
