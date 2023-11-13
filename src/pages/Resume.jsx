@@ -26,11 +26,11 @@ class Resume extends Component {
                             <div className='resumeContent'>
                                 <div className='resumeInside'>
                                     <div className='year'>
-                                        <p>2023-01-02</p>
+                                        <p>2019-09-20</p>
                                     </div>
 
                                     <h3>Ahkbar El Youm Academy</h3>
-                                    <h3>Bac In Computer Science</h3>
+                                    <h3>Bachelor of Computer Science</h3>
                                 </div>
                             </div>
                         </div>
@@ -159,19 +159,25 @@ class Resume extends Component {
                                     </div>
                                 </div>
                                 <div className="skill">
-                                    <h3>Web Design<span>70%</span></h3>
+                                    <h3>Web Design<span>75%</span></h3>
+                                    <div className="the-progress">
+                                        <span style={{width: "75%"}}></span>
+                                    </div>
+                                </div>
+                                <div className="skill">
+                                    <h3>Backend Development<span>70%</span></h3>
                                     <div className="the-progress">
                                         <span style={{width: "70%"}}></span>
                                     </div>
                                 </div>
                                 <div className="skill">
-                                    <h3>Problem Solving<span>85%</span></h3>
+                                    <h3>responsive design<span>80%</span></h3>
                                     <div className="the-progress">
-                                        <span style={{width: "85%"}}></span>
+                                        <span style={{width: "80%"}}></span>
                                     </div>
                                 </div>
                                 <div className="skill">
-                                    <h3>Clean Code<span>70%</span></h3>
+                                    <h3>Linux<span>70%</span></h3>
                                     <div className="the-progress">
                                         <span style={{width: "70%"}}></span>
                                     </div>
