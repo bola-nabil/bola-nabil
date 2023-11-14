@@ -57,7 +57,7 @@ return (
                             Home
                         </Link>
                     </li>
-                    <li onClick={() =>  handleItemClick('home') } className={activeItem === 'about' ? 'active' : ''} >
+                    <li onClick={() =>  handleItemClick('about') } className={activeItem === 'about' ? 'active' : ''} >
                         <Link onClick={() => {setShowMenu(!showMenu); handleItemClick('about');}} to='/about' className='homeLinks'>
                             <div className='homeIcon'>
                                 <FontAwesomeIcon icon={faUser}/>
