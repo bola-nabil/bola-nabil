@@ -50,7 +50,7 @@ return (
             <nav className={`${showMenu ? 'show' : ''}`}>
                 <ul>
                     <li onClick={() =>  handleItemClick('home') } className={activeItem === 'home' ? 'active' : ''} >
-                        <Link onClick={() => setShowMenu(!showMenu)} to='/' className='homeLinks'>
+                        <Link onClick={() => setShowMenu(!showMenu)} to='/bola-nabil' className='homeLinks'>
                             <div className='homeIcon'>
                                 <FontAwesomeIcon icon={faHouse}/>
                             </div>
@@ -98,7 +98,7 @@ return (
 </div>
 
     <Routes>
-        <Route path='/'  exact element={<Home/>}/>
+        <Route path='/bola-nabil'  exact element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/projects' element={<Projects/>}/>
