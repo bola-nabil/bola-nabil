@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bola-nabil/static/css/main.6cae37a9.css",
-    "main.js": "/bola-nabil/static/js/main.782037d6.js",
+    "main.js": "/bola-nabil/static/js/main.a6b67542.js",
     "static/js/787.28cb0dcd.chunk.js": "/bola-nabil/static/js/787.28cb0dcd.chunk.js",
     "static/media/ibsar.jpg": "/bola-nabil/static/media/ibsar.d6dd583e599de4e0ceb5.jpg",
     "static/media/javascript.jpg": "/bola-nabil/static/media/javascript.50bb8734632465495945.jpg",
@@ -23,11 +23,11 @@
     "static/media/myPhoto.jpg": "/bola-nabil/static/media/myPhoto.9aa58aa382dae4fb476f.jpg",
     "index.html": "/bola-nabil/index.html",
     "main.6cae37a9.css.map": "/bola-nabil/static/css/main.6cae37a9.css.map",
-    "main.782037d6.js.map": "/bola-nabil/static/js/main.782037d6.js.map",
+    "main.a6b67542.js.map": "/bola-nabil/static/js/main.a6b67542.js.map",
     "787.28cb0dcd.chunk.js.map": "/bola-nabil/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cae37a9.css",
-    "static/js/main.782037d6.js"
+    "static/js/main.a6b67542.js"
   ]
 }
