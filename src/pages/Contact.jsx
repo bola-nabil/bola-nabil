@@ -1,14 +1,36 @@
-import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Footer from './Footer';
+import React, { useState } from 'react';
+import axios from 'axios';
 
-class Contact extends Component {
-    state = {  } 
-    render() { 
+
+const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+        await axios.post('http://localhost:3000/', {
+            to: email,
+            subject,
+            text: message,
+        });
+
+        setIsSubmitted(true);
+        } catch (error) {
+        console.error('Error sending email:', error);
+          console.log('fuck');
+        }
+
+};
         return (
             <div className='contact'>
                 <div className='container'>
@@ -46,19 +68,24 @@ class Contact extends Component {
                     </div>
                     <div className='contactMessage'>
                         <div className='messageBox'>
-                            <form action="mailto:bolanabil404@gmail.com">
+                            <form onSubmit={handleSubmit}>
                                 <div className='infoForm'>
-                                    <input type="text" placeholder='Name*' required/>
-                                    <input type="email" placeholder='Email*' required/>
+                                    <input type="text" placeholder='Name*' value={name} onChange={(e) => setName(e.target.value)}required/>
+                                    <input type="email" placeholder='Email*' value={email} onChange={(e) => setEmail(e.target.value)} required/>
                                 </div>
                                 <div className='subject'>
-                                    <input type="text" placeholder='Subject*'/>
+                                    <input type="text" placeholder='Subject*' value={subject} onChange={(e) => setSubject(e.target.value)} required/>
                                 </div>
-                                    <textarea placeholder='Message*' required></textarea>
+                                    <textarea placeholder='Message*' value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                                 <div className='submit'>
                                     <input type="submit" value='Send Message' />
                                 </div>
                             </form>
+                            {isSubmitted && (
+                            <div style={{ color: 'green', marginTop: '10px' }}>
+                            Success! The form was submitted successfully.
+                            </div>
+                                )}
                         </div>
                         <div className='mapBox'>
                             <iframe title='location' src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d258.44339217918514!2d30.90221538442333!3d29.36484403875814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1699171481734!5m2!1sar!2seg"></iframe>
@@ -69,6 +96,6 @@ class Contact extends Component {
             </div>
         );
     }
-}
+
 
 export default Contact;

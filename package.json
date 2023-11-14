@@ -12,6 +12,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
@@ -46,5 +50,17 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "description": "<div align=\"center\">\r   <a href=\"https://github.com/bola-nabil\"> \r   <img src=\"https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=bola-nabil&&show_icons=true&theme=dark\" alt=\"GitHub Stats\" height=\"175\">\r   <img src=\"https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=bola-nabil&layout=compact&theme=dark\" alt=\"Top Langs\" height=\"175\">\r </div>\r <br />\r <div align=\"center\">\r   <a href=\"https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil\"><img src=\"https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&background=233142&ring=e22822&fire=e22822&currStreakNum=ffffff&currStreakLabel=e22822&sideNums=ffffff&sideLabels=e22822&dates=ffffff\"/></a>\r </div>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bola-nabil/bola-nabil.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bola-nabil/bola-nabil/issues"
   }
 }

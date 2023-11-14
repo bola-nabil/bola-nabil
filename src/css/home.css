@@ -3,6 +3,7 @@
     background-size: cover;
     height: calc(100vh - 80px);
 }
+
 @media (max-width: 992px){
     .homePage {
         height: calc(100vh - 60px);
@@ -47,7 +48,7 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: teal;
+    background-color: black;
 }
 
 .header nav ul .homeLinks {
@@ -87,7 +88,7 @@
     }
     .header .bars {
         position: relative;
-        color: var(--second-color);
+        color: var(--main-color);
         font-size: 25px;
         cursor: pointer;
     }
@@ -109,7 +110,7 @@
         left: 0;
         top: 0;
         background-color: black;
-        width: 60%;
+        width: 250px;
         height: 100vh;
     }
     .show ul li {
@@ -125,6 +126,7 @@
         visibility: hidden;
     }
 }
+
 .exit-icon {
     color: var(--second-color);
     font-weight: bold;
@@ -195,7 +197,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: #282828;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,7 +217,6 @@
     font-size: 18px;
 }
 
-
 @media (max-width: 600px)  {
     .homeSection .homeContent {
         flex-direction: column;
@@ -229,9 +230,13 @@
         margin-left: 0;
         margin-top: 0;
     }
+    .homeSection .homeImage {
+        padding-bottom: 20px;
+    }
     .homeSection .homeImage img {
         width: 150px;
-        margin-left: 20px;
+        margin-left: 40px;
+        margin-top: -20px;
     }
     .homeContent .aboutSection .homeTitle {
         margin-top: 0;

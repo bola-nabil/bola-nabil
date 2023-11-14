@@ -17,12 +17,29 @@
     justify-content: center;
     align-items: center;
 }
+
+.contactSection .contactLocation:hover,
+.contactSection .contactPhone:hover,
+.contactSection .contactEmail:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
 @media (min-width: 778px) and (max-width: 992px) {
     .contactSection .contactEmail {
         margin-left: 180px;
         width: 300px;
     }
 }
+
 .contactSection .contactLocation:hover{
     animation: up-to-down 2s linear;
     -webkit-animation: up-to-down 2s linear;
@@ -83,6 +100,7 @@
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 40px;
     margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .contactMessage .messageBox {
@@ -107,14 +125,17 @@
     margin-top: 25px;
     padding: 10px 0;
 }
+
 .contactMessage .messageBox input[type='email'] {
     margin-left: 20px;
 }
+
 .contactMessage .messageBox textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 25px;
 }
+
 .contactMessage .messageBox input:focus,
 .contactMessage .messageBox textarea:focus {
     outline: none;
@@ -164,6 +185,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
 @media (max-width: 600px) {
     .contactMessage {
         display: flex;
@@ -171,8 +193,6 @@
         justify-content: center;
         align-items: center;
         margin-left: 20px;
-        /* display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     }
     .contactMessage .messageBox {
         width: 310px;
