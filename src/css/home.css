@@ -40,7 +40,7 @@
 .header nav ul {
     display: flex;
     margin-left: 200px;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .header.fixed {

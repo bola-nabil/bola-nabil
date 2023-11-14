@@ -18,7 +18,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-        await axios.post('http://localhost:3000/', {
+        await axios.post('https://bola-nabil.github.io/bola-nabil', {
             to: email,
             subject,
             text: message,

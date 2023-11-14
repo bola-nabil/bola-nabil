@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.post('http://localhost:3000/', (req, res) => {
+app.post('https://bola-nabil.github.io/bola-nabil', (req, res) => {
     const { to, subject, text } = req.body;
 
 const transporter = nodemailer.createTransport({
