@@ -1,273 +1,179 @@
-import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import Footer from './Footer';
-class Resume extends Component {
-render() { 
+import Certifcate from '../components/Certficate';
+import Skills from '../components/Skills';
+import Experience from '../components/Experience';
+import PageTitle from '../components/PageTitle';
+
+function Resume() {
 return (
-    <div className='resume'>
-        <div className='container'>
-            <div className='boxTitle'>
-                <div className='title'>
-                    <h2>Resume</h2>
-                    <div className='insideText'>
-                        <span className='first'>My </span>
-                        <span className='second'>Resume</span>
-                    </div>
-                </div>
-            </div>
-            <div className='resumeSection'>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Education</h3>
-                    </div>
-                    <div className='resumeContent'>
-                        <div className='resumeInside'>
-                            <div className='year'>
-                                <p>2019-09-20</p>
-                            </div>
+  <div className="resume">
+    <div className="container">
+      <PageTitle title="Resume" first="MY " second="Resume"/>
+      <div className="resumeSection">
+        <Experience
+          title="Education"
+          year="2019-09-20"
+          company="Ahkbar El Youm Academy"
+          description="Bachelor of Computer Science"
+        />
+        <Experience
+          title="Experience"
+          year="2023-10-01"
+          company="Upwork"
+          description="Frontend Developer"
+        />
 
-                            <h3>Ahkbar El Youm Academy</h3>
-                            <h3>Bachelor of Computer Science</h3>
-                        </div>
-                    </div>
-                </div>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Experience</h3>
-                    </div>
-                    <div className='resumeContent'>
-                        <div className='resumeInside'>
-                            <div className='year'>
-                                <p>2023-10-01</p>
-                            </div>
-
-                            <h3>Upwork</h3>
-                            <h3>Frontend Developer</h3>
-                        </div>
-                    </div>
-                </div>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Frontend Skills</h3>
-                    </div>
-                    <div className='resumeSkills'>
-                        <div className="skill">
-                            <h3>HTML <span>80%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "80%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Css <span>75%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "75%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>BootStarp <span>75%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "75%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>JavaScript <span>70%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>TypeScript <span>70%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>JQuery <span>90%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "90%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>React <span>65%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "65%"}}></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Concepts Skills</h3>
-                    </div>
-                    <div className='resumeSkills'>
-                        <div className="skill">
-                            <h3>Data Structures<span>80%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "80%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Algorithms<span>80%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "80%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>OOP<span>85%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "85%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>SOLID Principles<span>70%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Design Patterns <span>65%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Problem Solving<span>85%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "90%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Clean Code <span>75%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "65%"}}></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Professional Skills</h3>
-                    </div>
-                    <div className='resumeSkills'>
-                        <div className="skill">
-                            <h3>Web Development<span>80%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "80%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Web Design<span>75%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "75%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Backend Development<span>70%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>responsive design<span>80%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "80%"}}></span>
-                            </div>
-                        </div>
-                        <div className="skill">
-                            <h3>Linux<span>70%</span></h3>
-                            <div className="the-progress">
-                                <span style={{width: "70%"}}></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='resumeBox'>
-                    <div className='resumeTitle'>
-                        <h3>Knowledge</h3>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Provide for Design and Development</p>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Willingness to learn Technologies</p>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Problem solving and coordination skills</p>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Team Handling / Team Work</p>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Flexible with Working Conditions</p>
-                    </div>
-                    <div className='knowskills'>
-                        <FontAwesomeIcon className='knowIcon' icon={faBolt} />
-                        <p>Excellent Listening and Quick Learners</p>
-                    </div>
-                </div>
-            </div>
-            <div className='certificate'>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/icpc2021.jpg')} alt="not found" />
-                    </div>
-                    <h5>Programming Contest</h5>
-                    <p>The 2021 MET Academy Collegiate Programming Contest</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/icpc2021x.jpg')} alt="not found" />
-                    </div>
-                    <h5>Programming Contest</h5>
-                    <p>The 2021 ICPC Egyption Collegiate Programming Contest</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/icpc2022.jpg')} alt="not found" />
-                    </div>
-                    <h5>Programming Contest</h5>
-                    <p>The 2022 ICPC ECPC Qualifications Collegiate Programming Contest</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/icpc2021.jpg')} alt="not found" />
-                    </div>
-                    <h5>Programming Contest</h5>
-                    <p>The 2022 ICPC Egyption Collegiate Programming Contest</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/javascript.jpg')} alt="not found" />
-                    </div>
-                    <h5>Javascript Basic</h5>
-                    <p>Javascipt Basic certificate from Hackerrank</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/css.jpg')} alt="not found" />
-                    </div>
-                    <h5>Css</h5>
-                    <p>Css certificate from Hackerrank</p>
-                </div>
-                <div className='certificateBox'>
-                    <div className='certificateImage'>
-                        <img src={require('../photos/certificate/freelancer.jpg')} alt="not found" />
-                    </div>
-                    <h5>Freelancer</h5>
-                    <p>Learn to how use upwork and basic freelanceing</p>
-                </div>
-            </div>
+        <div className="resumeBox">
+          <div className="resumeTitle">
+            <h3>Frontend Skills</h3>
+          </div>
+          <div className="resumeSkills">
+            <Skills title="html" case="80%" style={{ width: "80%" }} />
+            <Skills title="css" case="75%" style={{ width: "75%" }} />
+            <Skills title="Bootstarp" case="75%" style={{ width: "75%" }} />
+            <Skills title="JavaScript" case="70%" style={{ width: "70%" }} />
+            <Skills title="TypeScript" case="70%" style={{ width: "70%" }} />
+            <Skills title="Jquery" case="90%" style={{ width: "90%" }} />
+            <Skills title="React" case="65%" style={{ width: "65%" }} />
+          </div>
         </div>
-        <Footer />
+
+        <div className="resumeBox">
+          <div className="resumeTitle">
+            <h3>Concepts Skills</h3>
+          </div>
+          <div className="resumeSkills">
+            <Skills
+              title="Data Structures"
+              case="80%"
+              style={{ width: "80%" }}
+            />
+            <Skills title="Algorithms" case="80%" style={{ width: "80%" }} />
+            <Skills title="oop" case="85%" style={{ width: "85%" }} />
+            <Skills
+              title="SOLID Principles"
+              case="70%"
+              style={{ width: "70%" }}
+            />
+            <Skills
+              title="Design Patterns"
+              case="65%"
+              style={{ width: "65%" }}
+            />
+            <Skills
+              title="Problem Solving"
+              case="85%"
+              style={{ width: "85%" }}
+            />
+            <Skills title="clean code" case="75%" style={{ width: "75%" }} />
+          </div>
+        </div>
+
+        <div className="resumeBox">
+          <div className="resumeTitle">
+            <h3>Professional Skills</h3>
+          </div>
+          <div className="resumeSkills">
+            <Skills
+              title="Web Development"
+              case="80%"
+              style={{ width: "80%" }}
+            />
+            <Skills title="Web Design" case="75%" style={{ width: "75%" }} />
+            <Skills
+              title="Backend Development"
+              case="70%"
+              style={{ width: "70%" }}
+            />
+            <Skills
+              title="responsive design"
+              case="80%"
+              style={{ width: "80%" }}
+            />
+            <Skills title="Linux" case="70%" style={{ width: "70%" }} />
+          </div>
+        </div>
+
+        <div className="resumeBox">
+          <div className="resumeTitle">
+            <h3>Knowledge</h3>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Provide for Design and Development</p>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Willingness to learn Technologies</p>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Problem solving and coordination skills</p>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Team Handling / Team Work</p>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Flexible with Working Conditions</p>
+          </div>
+          <div className="knowskills">
+            <FontAwesomeIcon className="knowIcon" icon={faBolt} />
+            <p>Excellent Listening and Quick Learners</p>
+          </div>
+        </div>
+      </div>
+      <div className="certificate">
+        <Certifcate
+          src={require("../photos/certificate/icpc2021.jpg")}
+          alt="not found"
+          title="Programming Contest"
+          description="The 2021 MET Academy Collegiate Programming Contest"
+        />
+        <Certifcate
+          src={require("../photos/certificate/icpc2021x.jpg")}
+          alt="not found"
+          title="Programming Contest"
+          description="The 2021 ICPC Egyption Collegiate Programming Contest"
+        />
+        <Certifcate
+          src={require("../photos/certificate/icpc2022.jpg")}
+          alt="not found"
+          title="Programming Contest"
+          description="The 2022 ICPC ECPC Qualifications Collegiate Programming Contest"
+        />
+        <Certifcate
+          src={require("../photos/certificate/icpc2021.jpg")}
+          alt="not found"
+          title="Programming Contest"
+          description="The 2022 ICPC Egyption Collegiate Programming Contest"
+        />
+        <Certifcate
+          src={require("../photos/certificate/javascript.jpg")}
+          alt="not found"
+          title="Javascript Basic"
+          description="Javascipt Basic certificate from Hackerrank"
+        />
+        <Certifcate
+          src={require("../photos/certificate/css.jpg")}
+          alt="not found"
+          title="Css"
+          description="Css certificate from Hackerrank"
+        />
+        <Certifcate
+          src={require("../photos/certificate/freelancer.jpg")}
+          alt="not found"
+          title="Freelancer"
+          description="Learn to how use upwork and basic freelanceing"
+        />
+      </div>
     </div>
+    <Footer />
+  </div>
 );
-}
 };
 
 export default Resume;
