@@ -13,7 +13,7 @@ function ProjectsCard(props) {
         </div>
         <div className="projectLinks">
           <Link to={props.toSite} target="_blank">
-            <div className="projectIcon">
+            <div className={props.className}>
               <FontAwesomeIcon className="icon" icon={props.iconSite}/>
             </div>
           </Link>
