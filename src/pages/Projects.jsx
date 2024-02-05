@@ -18,6 +18,7 @@ render() {
               title="Dashboard Project"
               toSite="https://bola-nabil.github.io/Dashboard/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/Dashboard.git/"
               iconGit={faGithub}
             />
@@ -28,6 +29,7 @@ render() {
               title="Ibsar Project"
               toSite="http://ebsar.website/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/Ibsar.git"
               iconGit={faGithub}
             />
@@ -38,6 +40,7 @@ render() {
               title="Protfolio Project"
               toSite="https://bola-nabil.github.io/protfolio/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/protfolio.git/"
               iconGit={faGithub}
             />
@@ -48,6 +51,7 @@ render() {
               title="Landing Page Project"
               toSite="https://bola-nabil.github.io/landing-page/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/landing-page.git/"
               iconGit={faGithub}
             />
@@ -58,6 +62,7 @@ render() {
               title="My Protfolio Project"
               toSite="https://bola-nabil.github.io/bola-nabil/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/bola-nabil.git"
               iconGit={faGithub}
             />
@@ -68,6 +73,7 @@ render() {
               title="Kasper Project"
               toSite="https://bola-nabil.github.io/Kasper/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/Kasper.git"
               iconGit={faGithub}
             />
@@ -78,6 +84,7 @@ render() {
               title="Leon Project"
               toSite="https://bola-nabil.github.io/leon/"
               iconSite={faLink}
+              className="projectIcon"
               toGit="https://github.com/bola-nabil/leon.git"
               iconGit={faGithub}
             />
@@ -86,8 +93,6 @@ render() {
               src={require("../photos/projects/calculator_project.jpg")}
               alt="not found"
               title="Calculator Project"
-              toSite="https://github.com/bola-nabil/calculator.git/"
-              iconSite={faLink}
               toGit="https://github.com/bola-nabil/calculator.git/"
               iconGit={faGithub}
             />
@@ -96,8 +101,6 @@ render() {
               src={require("../photos/projects/bankSystem.jpg")}
               alt="not found"
               title="Bank System Project"
-              toSite="https://github.com/bola-nabil/Bank-System.git/"
-              iconSite={faLink}
               toGit="https://github.com/bola-nabil/Bank-System.git/"
               iconGit={faGithub}
             />
@@ -106,8 +109,6 @@ render() {
               src={require("../photos/projects/leetcode.jpg")}
               alt="not found"
               title="Leetcode Problem Solutions"
-              toSite="https://github.com/bola-nabil/leetcode.git/"
-              iconSite={faLink}
               toGit="https://github.com/bola-nabil/leetcode.git/"
               iconGit={faGithub}
             />
@@ -116,8 +117,6 @@ render() {
               src={require("../photos/projects/codeforces.jpg")}
               alt="not found"
               title="Codeforces Problem Solutions"
-              toSite="https://github.com/bola-nabil/codeforces.git/"
-              iconSite={faLink}
               toGit="https://github.com/bola-nabil/codeforces.git/"
               iconGit={faGithub}
             />
@@ -126,8 +125,6 @@ render() {
               src={require("../photos/projects/atcoder.jpg")}
               alt="not found"
               title="Atcoder Problem Solutions"
-              toSite="https://github.com/bola-nabil/atcoder.git"
-              iconSite={faLink}
               toGit="https://github.com/bola-nabil/atcoder.git"
               iconGit={faGithub}
             />
