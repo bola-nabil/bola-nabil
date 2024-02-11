@@ -9,7 +9,7 @@
 </div>
     
 ## ⚡ MY Skills
-<table align="center" class="bg-dark">
+<table align="center" class="table table-dark">
   <tr bg-dark>
     <td align="center" widht=90>
       <img src="https://skillicons.dev/icons?i=html" alt="icon" width="55" height="55" />
