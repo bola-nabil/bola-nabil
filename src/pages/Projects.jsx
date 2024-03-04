@@ -3,7 +3,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Footer from './Footer';
 import PageTitle from '../components/PageTitle';
 import ProjectsCard from '../components/ProjectsCard';
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useState } from 'react';
@@ -15,7 +14,7 @@ function Projects () {
         title: "Interviews Website",
         liveLink: "https://bola-nabil.github.io/Interviews/",
         gitLink: "https://github.com/bola-nabil/Interviews/",
-        imgUrl: "myWebsite.jpg",
+        imgUrl: "interviews.jpg",
       },
       {
         title: "My Protfolio",
@@ -45,12 +44,6 @@ function Projects () {
         title: "Protfolio Design",
         liveLink: "https://bola-nabil.github.io/protfolio/",
         gitLink: "https://github.com/bola-nabil/protfolio.git/",
-        imgUrl: "protofilo.jpg",
-      },
-      {
-        title: "Landing Page",
-        liveLink: "https://bola-nabil.github.io/landing-page/",
-        gitLink: "https://github.com/bola-nabil/landing-page.git/",
         imgUrl: "protofilo.jpg",
       },
       {
