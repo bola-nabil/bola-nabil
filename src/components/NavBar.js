@@ -58,7 +58,7 @@ function NavBar() {
       <Navbar bg="dark" data-bs-theme="dark" className="nav-size" fixed="top">
         <Container>
           <Link
-            to="/bola-nabil"
+            to="/"
             className={`nav-home nav-title ${
               activeItem === "bola-nabil" ? "active-home" : ""
             }`}
