@@ -9,7 +9,6 @@ return (
   <div className="homePage">
     <div className="overlay"></div>
     <div className="homeSection">
-      <div className="homeContent">
         <div className="homeImage">
           <img src={require("../photos/myPhoto.jpg")} alt="not found" />
         </div>
@@ -43,7 +42,6 @@ return (
           </div>
         </div>
       </div>
-    </div>
   </div>
 );
 };
