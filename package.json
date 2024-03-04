@@ -51,7 +51,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.1.1"
   },
   "description": "<div align=\"center\">\r   <a href=\"https://github.com/bola-nabil\"> \r   <img src=\"https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=bola-nabil&&show_icons=true&theme=dark\" alt=\"GitHub Stats\" height=\"175\">\r   <img src=\"https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=bola-nabil&layout=compact&theme=dark\" alt=\"Top Langs\" height=\"175\">\r </div>\r <br />\r <div align=\"center\">\r   <a href=\"https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil\"><img src=\"https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&background=233142&ring=e22822&fire=e22822&currStreakNum=ffffff&currStreakLabel=e22822&sideNums=ffffff&sideLabels=e22822&dates=ffffff\"/></a>\r </div>",
   "main": "index.js",
