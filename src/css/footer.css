@@ -11,6 +11,7 @@ footer {
 footer p {
     color: var(--second-color);
     font-size: 20px;
+    margin: auto;
 }
 
 @media (max-width: 600px) {
