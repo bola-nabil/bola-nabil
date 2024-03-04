@@ -34,7 +34,7 @@ return (
           <div className="cvBox">
             <Link
               className="cv"
-              to="https://drive.google.com/file/d/1LXt-Znm9G2jLIIbThJhzCdQ3t8z7nH-z/view?usp=drive_link"
+              to="https://drive.google.com/file/d/1osOysVmKon9KPKHh6uv2Os1_kmrJqD7v/view?usp=sharing"
               target="_blank"
             >
               Show Cv
