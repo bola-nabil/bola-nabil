@@ -4,44 +4,15 @@ import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
 import NotFound from './NotFound';
-import NavLink from '../components/NavLink';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
-import { faListCheck } from '@fortawesome/free-solid-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React, { useState, useEffect } from 'react';
 import {Route, Routes} from 'react-router-dom';
+import NavBar from '../components/NavBar';
 
 const App = () => {
-    const [showMenu, setShowMenu] = useState(false);
-    const [activeItem, setActiveItem] = useState('home');
-
-    const handleItemClick = (itemName) => {
-        setActiveItem(itemName);
-    }
-
-    const [isNavFixed, setNavFixed] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-        const scrollY = window.scrollY || document.documentElement.scrollTop;
-        const threshold = 100;
-        setNavFixed(scrollY > threshold);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-        window.removeEventListener('scroll', handleScroll);
-    };
-}, []);
 
 return (
-  <div className="x">
-    <div className={`header ${isNavFixed ? "fixed" : ""}`}>
+  <>
+    {/* <div className={`header ${isNavFixed ? "fixed" : ""}`}>
       <div className="container">
         <div className="logo">
           <p>bola-nabil</p>
@@ -94,8 +65,8 @@ return (
           <FontAwesomeIcon className="barsIcon" icon={faBars} />
         </div>
       </div>
-    </div>
-
+    </div> */}
+      <NavBar />
     <Routes>
       <Route path="/bola-nabil" exact element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -104,7 +75,7 @@ return (
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  </div>
+  </>
 );
 };
 
