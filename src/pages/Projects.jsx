@@ -11,6 +11,12 @@ function Projects () {
 
     const projectsData = [
       {
+        title: "Movie App",
+        liveLink: "https://bola-nabil.github.io/Movie-App/",
+        gitLink: "https://github.com/bola-nabil/Movie-App/",
+        imgUrl: "movie-app.jpg",
+      },
+      {
         title: "Interviews Website",
         liveLink: "https://bola-nabil.github.io/Interviews/",
         gitLink: "https://github.com/bola-nabil/Interviews/",
