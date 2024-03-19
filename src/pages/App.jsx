@@ -4,7 +4,6 @@ import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
 import NotFound from './NotFound';
-import React, { useState, useEffect } from 'react';
 import {Route, Routes} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 
