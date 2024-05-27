@@ -1,5 +1,5 @@
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import HomeLink from "../components/HomeLink";
@@ -27,8 +27,8 @@ return (
                 icon={faFacebookF}
               />
               <HomeLink
-                to="https://www.twitter.com/bolaNabil_"
-                icon={faXTwitter}
+                to="https://www.youtube.com/@bola-nabil"
+                icon={faYoutube}
               />
               <HomeLink
                 to="https://www.linkedin.com/in/bolanabil"
