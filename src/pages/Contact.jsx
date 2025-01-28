@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
 import PageTitle from "../components/PageTitle";
 import ContactCard from "../components/ContactCard";
+import profile from "../data/data.json";
+import "../styles/contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -41,22 +45,25 @@ const Contact = () => {
             className="contactLocation"
             icon={faLocationDot}
             title="My Location:"
-            description="Egypt, Al-Fayoum"
+            description={profile.city}
           />
           <ContactCard
             className="contactPhone"
             icon={faPhone}
             title="Phone Number:"
             classContact="phoneNumber"
-            description="(+20) 102 614 6442"
+            description={profile.contact.phone}
           />
           <div className="contactEmail">
             <div className="contactIcon">
               <FontAwesomeIcon className="icon" icon={faEnvelope} />
             </div>
             <h2>Email Address:</h2>
-            <Link className="mailContact" to="mailto:bolanabil404@gmail.com">
-              bolanabil404@gmail.com
+            <Link
+              className="mailContact"
+              to={`mailto:${profile.contact.email}`}
+            >
+              {profile.contact.email}
             </Link>
           </div>
         </div>

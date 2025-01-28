@@ -1,23 +1,20 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-function Information(props) {
+const Information = ({ title, className, to, LinkTitle, info }) => {
   return (
     <>
       <li>
-        <label>{props.title}</label>
-        <span className={`desInfo ${props.className}`}>
-          <Link
-            className="infoLink"
-            to={props.to}
-            target="_blank"
-          >
-            {props.LinkTitle}
+        <label>{title}</label>
+        <span className={`desInfo ${className}`}>
+          <Link className="infoLink" to={to} target="_blank">
+            {LinkTitle}
           </Link>
-          {props.info}
+          {info}
         </span>
       </li>
     </>
   );
-}
+};
 
 export default Information;

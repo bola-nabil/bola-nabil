@@ -1,17 +1,18 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function ContactCard(props) {
+const ContactCard = ({ className, icon, title, classContact, description }) => {
   return (
     <>
-      <div className={props.className}>
+      <div className={className}>
         <div className="contactIcon">
-          <FontAwesomeIcon className="icon" icon={props.icon} />
+          <FontAwesomeIcon className="icon" icon={icon} />
         </div>
-        <h2>{props.title}</h2>
-        <p className={props.classContact}>{props.description}</p>
+        <h2>{title}</h2>
+        <p className={classContact}>{description}</p>
       </div>
     </>
   );
-}
+};
 
 export default ContactCard;

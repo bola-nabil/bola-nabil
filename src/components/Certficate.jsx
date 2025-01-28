@@ -1,16 +1,13 @@
+import React from "react";
 
-function Certifcate(props) {
-    return (
-      <>
-        <div className="certificateBox">
-            <div className="certificateImage">
-            <img src={props.src} alt={props.alt} />
-            </div>
-            <h5>{props.title}</h5>
-            <p>{props.description}</p>
-        </div>
-      </>
-    );
-}
+const Certifcate = ({ src, alt }) => {
+  return (
+    <div className="certificateBox">
+      <div className="certificateImage">
+        <img src={src} alt={alt} />
+      </div>
+    </div>
+  );
+};
 
 export default Certifcate;
