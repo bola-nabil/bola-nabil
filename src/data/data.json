@@ -1,0 +1,222 @@
+{
+  "name": "Bola Nabil",
+  "job-title": "Software Engineer",
+  "birthday": "10 Mar, 2001",
+  "city": "Al-Fayoum, Egypt",
+  "college": "Akhbar El Youm Academy",
+  "degree": "Bachelor of Computer Science",
+  "experience": "0-1 Years",
+  "skills": {
+    "frontend": [
+      { "id": 1, "skillsTitle": "html", "skillsCase": "80%" },
+      { "id": 2, "skillsTitle": "css", "skillsCase": "75%" },
+      { "id": 3, "skillsTitle": "Bootstarp", "skillsCase": "75%" },
+      { "id": 4, "skillsTitle": "JavaScript", "skillsCase": "70%" },
+      { "id": 5, "skillsTitle": "TypeScript", "skillsCase": "70%" },
+      { "id": 6, "skillsTitle": "Jquery", "skillsCase": "90%" },
+      { "id": 7, "skillsTitle": "React", "skillsCase": "65%" }
+    ],
+    "concepts": [
+      { "id": 1, "skillsTitle": "Data Structures", "skillsCase": "80%" },
+      { "id": 2, "skillsTitle": "Algorithms", "skillsCase": "80%" },
+      { "id": 3, "skillsTitle": "oop", "skillsCase": "85%" },
+      { "id": 4, "skillsTitle": "SOLID Principles", "skillsCase": "70%" },
+      { "id": 5, "skillsTitle": "Design Patterns", "skillsCase": "65%" },
+      { "id": 6, "skillsTitle": "Problem Solving", "skillsCase": "85%" },
+      { "id": 7, "skillsTitle": "clean code", "skillsCase": "75%" }
+    ],
+    "professional": [
+      { "id": 1, "skillsTitle": "Web Development", "skillsCase": "80%" },
+      { "id": 2, "skillsTitle": "Web Design", "skillsCase": "75%" },
+      { "id": 3, "skillsTitle": "Backend Development", "skillsCase": "70%" },
+      { "id": 4, "skillsTitle": "responsive design", "skillsCase": "80%" },
+      { "id": 5, "skillsTitle": "Linux", "skillsCase": "70%" }
+    ],
+    "knowledges": [
+      { "id": 1, "skillsTitle": "Provide for Design and Development" },
+      { "id": 2, "skillsTitle": "Willingness to learn Technologies" },
+      { "id": 3, "skillsTitle": "Problem solving and coordination skills" },
+      { "id": 4, "skillsTitle": "Team Handling / Team Work" },
+      { "id": 5, "skillsTitle": "Flexible with Working Conditions" },
+      { "id": 6, "skillsTitle": "Excellent Listening and Quick Learners" }
+    ]
+  },
+  "certifcates": [
+    {
+      "id": 1,
+      "image": "icpc2021.jpg",
+      "title": "Programming Contest",
+      "description": "The 2021 MET Academy Collegiate Programming Contest"
+    },
+    {
+      "id": 2,
+      "image": "icpc2021x.jpg",
+      "title": "Programming Contest",
+      "description": "The 2021 ICPC Egyption Collegiate Programming Contest"
+    },
+    {
+      "id": 3,
+      "image": "icpc2022.jpg",
+      "title": "Programming Contest",
+      "description": "The 2022 ICPC ECPC Qualifications Collegiate Programming Contest"
+    },
+    {
+      "id": 4,
+      "image": "icpc2021.jpg",
+      "title": "Programming Contest",
+      "description": "The 2022 ICPC Egyption Collegiate Programming Contest"
+    },
+    {
+      "id": 5,
+      "image": "javascript.jpg",
+      "title": "Javascript Basic",
+      "description": "Javascipt Basic certificate from Hackerrank"
+    },
+    {
+      "id": 6,
+      "image": "css.jpg",
+      "title": "Css",
+      "description": "Css certificate from Hackerrank"
+    },
+    {
+      "id": 7,
+      "image": "freelancer.jpg",
+      "title": "Freelancer",
+      "description": "Learn to how use upwork and basic freelanceing"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Clock",
+      "liveLink": "https://bola-nabil.github.io/clock/",
+      "gitLink": "https://github.com/bola-nabil/clock",
+      "imgUrl": "clock.png"
+    },
+    {
+      "title": "Drum Machine",
+      "liveLink": "https://bola-nabil.github.io/drum-machine/",
+      "gitLink": "https://github.com/bola-nabil/drum-machine",
+      "imgUrl": "drum-machine.png"
+    },
+    {
+      "title": "Random Quote",
+      "liveLink": "https://bola-nabil.github.io/random-quote-machine/",
+      "gitLink": "https://github.com/bola-nabil/random-quote-machine",
+      "imgUrl": "random-quote-machine.png"
+    },
+    {
+      "title": "Technoit",
+      "liveLink": "https://bola-nabil.github.io/Technoit/",
+      "gitLink": "https://github.com/bola-nabil/Technoit",
+      "imgUrl": "technoit.png"
+    },
+    {
+      "title": "Portfolio Template",
+      "liveLink": "https://bola-nabil.github.io/portfolio-design/",
+      "gitLink": "https://github.com/bola-nabil/portfolio-design",
+      "imgUrl": "portfolio-template.png"
+    },
+    {
+      "title": "Cosmix",
+      "liveLink": "https://bola-nabil.github.io/cosmix/",
+      "gitLink": "https://github.com/bola-nabil/cosmix",
+      "imgUrl": "cosmix.png"
+    },
+    {
+      "title": "Movie App",
+      "liveLink": "https://bola-nabil.github.io/Movie-App/",
+      "gitLink": "https://github.com/bola-nabil/Movie-App/",
+      "imgUrl": "movie-app.jpg"
+    },
+    {
+      "title": "Interviews Website",
+      "liveLink": "https://bola-nabil.github.io/Interviews/",
+      "gitLink": "https://github.com/bola-nabil/Interviews/",
+      "imgUrl": "interviews.jpg"
+    },
+    {
+      "title": "My Portfolio",
+      "liveLink": "https://bola-nabil.github.io/bola-nabil/",
+      "gitLink": "https://github.com/bola-nabil/bola-nabil.git",
+      "imgUrl": "myWebsite.jpg"
+    },
+    {
+      "title": "Ibsar",
+      "liveLink": "http://ebsar.website/",
+      "gitLink": "https://github.com/bola-nabil/Ibsar.git",
+      "imgUrl": "ibsar.jpg"
+    },
+    {
+      "title": "Kasper",
+      "liveLink": "https://bola-nabil.github.io/Kasper/",
+      "gitLink": "https://github.com/bola-nabil/Kasper.git",
+      "imgUrl": "kasper.jpg"
+    },
+    {
+      "title": "Dashboard",
+      "liveLink": "https://bola-nabil.github.io/Dashboard/",
+      "gitLink": "https://github.com/bola-nabil/Dashboard.git/",
+      "imgUrl": "dashboard.jpg"
+    },
+    {
+      "title": "Protfolio Design",
+      "liveLink": "https://bola-nabil.github.io/protfolio/",
+      "gitLink": "https://github.com/bola-nabil/protfolio.git/",
+      "imgUrl": "protofilo.jpg"
+    },
+    {
+      "title": "Leon",
+      "liveLink": "https://bola-nabil.github.io/leon/",
+      "gitLink": "https://github.com/bola-nabil/leon.git",
+      "imgUrl": "leon.jpg"
+    },
+    {
+      "title": "Calculator",
+      "liveLink": "https://github.com/bola-nabil/calculator.git/",
+      "gitLink": "https://github.com/bola-nabil/calculator.git/",
+      "imgUrl": "calculator_project.jpg"
+    },
+    {
+      "title": "Bank System Managment",
+      "liveLink": "https://github.com/bola-nabil/Bank-System.git/",
+      "gitLink": "https://github.com/bola-nabil/Bank-System.git/",
+      "imgUrl": "bankSystem.jpg"
+    },
+    {
+      "title": "Leetcode Problem Solutions",
+      "liveLink": "https://github.com/bola-nabil/leetcode.git/",
+      "gitLink": "https://github.com/bola-nabil/leetcode.git/",
+      "imgUrl": "leetcode.jpg"
+    },
+    {
+      "title": "Codeforces Problem Solutions",
+      "liveLink": "https://github.com/bola-nabil/codeforces.git/",
+      "gitLink": "https://github.com/bola-nabil/codeforces.git/",
+      "imgUrl": "codeforces.jpg"
+    },
+    {
+      "title": "Atcoder Problem Solutions",
+      "liveLink": "https://github.com/bola-nabil/atcoder.git",
+      "gitLink": "https://github.com/bola-nabil/atcoder.git",
+      "imgUrl": "atcoder.jpg"
+    }
+  ],
+  "contact": {
+    "phone": "(+20) 102 614 6442",
+    "email": "bolanabil404@gmail.com"
+  },
+  "websites": {
+    "portfolio": "https://bola-nabil.github.io/bola-nabil",
+    "github": "https://www.github.com/bola-nabil",
+    "hackerrank": "https://www.hackerrank.com/profile/bolaNabil",
+    "leetcode": "https://www.leetcode.com/bola-nabil"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/bolanabil404",
+    "youtube": "https://www.youtube.com/@bola-nabil",
+    "linkedin": "https://www.linkedin.com/in/bolanabil"
+  },
+  "cv": {
+    "frontend": "https://drive.google.com/file/d/1Gs-aH1ZPc-2gZEGbn2bx_SoI5A1AuhYO/view?usp=sharing"
+  }
+}
