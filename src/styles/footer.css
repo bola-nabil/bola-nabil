@@ -1,0 +1,32 @@
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 40px;
+  height: 60px;
+  width: 100%;
+}
+
+.footer-content p {
+  color: var(--second-color);
+  font-size: 20px;
+  margin: auto;
+}
+
+.counter {
+  color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 14px;
+  }
+}
