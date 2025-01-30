@@ -83,6 +83,18 @@
       "image": "freelancer.jpg",
       "title": "Freelancer",
       "description": "Learn to how use upwork and basic freelanceing"
+    },
+    {
+      "id": 8,
+      "image": "responsive-freecodecamp.png"
+    },
+    {
+      "id": 9,
+      "image": "javascript-freecodecamp.png"
+    },
+    {
+      "id": 10,
+      "image": "frontend-freecodecamp.png"
     }
   ],
   "projects": [
@@ -217,6 +229,6 @@
     "linkedin": "https://www.linkedin.com/in/bolanabil"
   },
   "cv": {
-    "frontend": "https://drive.google.com/file/d/1Gs-aH1ZPc-2gZEGbn2bx_SoI5A1AuhYO/view?usp=sharing"
+    "frontend": "https://drive.google.com/file/d/1SH-hmYfIto6ZHf_QwXZmQ9Xq57Ug2lLE/view?usp=sharing"
   }
 }

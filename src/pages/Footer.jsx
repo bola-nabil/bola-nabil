@@ -10,11 +10,13 @@ const Footer = () => {
     if (!hasVisited) {
       const incrementTotalVisits = async () => {
         try {
-          await fetch("http://localhost:5000/api/visits/increment", {
+          await fetch("https://bola-nabil.vercel.app/api/visits/increment", {
             method: "POST",
           });
 
-          const response = await fetch("http://localhost:5000/api/visits");
+          const response = await fetch(
+            "https://bola-nabil.vercel.app/api/visits"
+          );
           const data = await response.json();
           setTotalVisits(data.totalVisits);
         } catch (error) {
@@ -40,7 +42,9 @@ const Footer = () => {
 
       const fetchTotalVisits = async () => {
         try {
-          const response = await fetch("http://localhost:5000/api/visits");
+          const response = await fetch(
+            "https://bola-nabil.vercel.app/api/visits"
+          );
           const data = await response.json();
           setTotalVisits(data.totalVisits);
         } catch (error) {
@@ -59,11 +63,10 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
+        <p>&copy; {theYear()} Bola Nabil - All rights reserved.</p>
         <p>
-          &copy; {theYear()} Bola Nabil - All rights reserved. Visits:{" "}
-          <span className="counter">
-            {totalVisits} | Your Visits: {userVisits}
-          </span>
+          Visits: <span className="counter">{totalVisits} </span>| Your Visits:{" "}
+          <span className="counter">{userVisits}</span>
         </p>
       </div>
     </footer>
