@@ -3,7 +3,7 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors({ origin: "https://bola-nabil.github.io/bola-nabil/" }));
+app.use(cors({ origin: "https://bola-nabil.github.io/" }));
 
 let totalVisits = 0;
 
