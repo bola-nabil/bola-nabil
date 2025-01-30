@@ -15,3 +15,5 @@ app.post("/api/visits/increment", (req, res) => {
   totalVisits += 1;
   res.json({ totalVisits });
 });
+
+module.exports = app;
