@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/bola-nabil/static/css/main.1a4387bd.css",
-    "main.js": "/bola-nabil/static/js/main.66dc0b17.js",
+    "main.css": "/bola-nabil/static/css/main.548b4519.css",
+    "main.js": "/bola-nabil/static/js/main.83214bef.js",
     "static/js/787.28cb0dcd.chunk.js": "/bola-nabil/static/js/787.28cb0dcd.chunk.js",
     "static/media/cosmix.png": "/bola-nabil/static/media/cosmix.d345d099de1fc7d2ec26.png",
     "static/media/technoit.png": "/bola-nabil/static/media/technoit.0b212fc6cf69435fac62.png",
+    "static/media/javascript-freecodecamp.png": "/bola-nabil/static/media/javascript-freecodecamp.9b0ad6a730e5270a9871.png",
+    "static/media/responsive-freecodecamp.png": "/bola-nabil/static/media/responsive-freecodecamp.bef197ff4e0d675624cf.png",
     "static/media/clock.png": "/bola-nabil/static/media/clock.f3e43eefdd09dcb7da43.png",
     "static/media/portfolio-template.png": "/bola-nabil/static/media/portfolio-template.8e2fd4e64434c7e1caa9.png",
+    "static/media/frontend-freecodecamp.png": "/bola-nabil/static/media/frontend-freecodecamp.3391c27e337d727f6e14.png",
     "static/media/random-quote-machine.png": "/bola-nabil/static/media/random-quote-machine.66f2ed1939385d43c67a.png",
     "static/media/drum-machine.png": "/bola-nabil/static/media/drum-machine.d27992d113d1930d6c96.png",
     "static/media/movie-app.jpg": "/bola-nabil/static/media/movie-app.ab1f7cfa521ca0e85d8f.jpg",
@@ -31,12 +34,12 @@
     "static/media/freelancer.jpg": "/bola-nabil/static/media/freelancer.a73c395a1ea5da06bde3.jpg",
     "static/media/myPhoto.jpg": "/bola-nabil/static/media/myPhoto.9aa58aa382dae4fb476f.jpg",
     "index.html": "/bola-nabil/index.html",
-    "main.1a4387bd.css.map": "/bola-nabil/static/css/main.1a4387bd.css.map",
-    "main.66dc0b17.js.map": "/bola-nabil/static/js/main.66dc0b17.js.map",
+    "main.548b4519.css.map": "/bola-nabil/static/css/main.548b4519.css.map",
+    "main.83214bef.js.map": "/bola-nabil/static/js/main.83214bef.js.map",
     "787.28cb0dcd.chunk.js.map": "/bola-nabil/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a4387bd.css",
-    "static/js/main.66dc0b17.js"
+    "static/css/main.548b4519.css",
+    "static/js/main.83214bef.js"
   ]
 }
