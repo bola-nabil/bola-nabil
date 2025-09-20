@@ -1,10 +1,4 @@
 <div align="center">
-  <a href="https://github.com/bola-nabil"> 
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=bola-nabil&&show_icons=true&theme=dark" alt="GitHub Stats" height="175">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=bola-nabil&layout=compact&theme=dark" alt="Top Langs" height="175">
-</div>
-<br />
-<div align="center">
   <a href="https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil"><img src="https://github-readme-streak-stats.herokuapp.com/?user=bola-nabil&background=233142&ring=e22822&fire=e22822&currStreakNum=ffffff&currStreakLabel=e22822&sideNums=ffffff&sideLabels=e22822&dates=ffffff"/></a>
 </div>
     
@@ -104,5 +98,3 @@
 <a href = "mailto:bolanabil404@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/bolanabil/" target="_blank" align="center"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
-<p align="center"><b>Visitors Count</b></p>  
-<p align="center"><img align="center" src="https://profile-counter.glitch.me/{bola-nabil}/count.svg" /></p>
