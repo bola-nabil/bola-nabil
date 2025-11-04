@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/bola-nabil/(.*)", "destination": "/$1" },
+    { "source": "/bola-nabil", "destination": "/" }
   ]
 }
