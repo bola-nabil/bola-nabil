@@ -11,9 +11,9 @@ import "../styles/home.css";
 
 const Home = () => {
   return (
-    <div className="homePage">
-      <div className="overlay"></div>
-      <div className="homeSection">
+    <div className="homePage position-relative vh-100">
+      <div className="overlay position-absolute left-0 top-0 w-100 h-100"></div>
+      <div className="homeSection position-relative d-flex justify-content-center align-items-center vh-100">
         <div className="homeImage">
           <img src={require("../photos/myPhoto.jpg")} alt="not found" />
         </div>
@@ -26,7 +26,7 @@ const Home = () => {
               I'm a Frontend Developer. {profile.experience} of experience.
               Experienced with all dynamic web projects.
             </p>
-            <div className="hLinks">
+            <div className="hLinks d-flex">
               <HomeLink to={profile.social.facebook} icon={faFacebookF} />
               <HomeLink to={profile.social.youtube} icon={faYoutube} />
               <HomeLink to={profile.social.linkedin} icon={faLinkedinIn} />

@@ -6,7 +6,7 @@ const Information = ({ title, className, to, LinkTitle, info }) => {
     <>
       <li>
         <label>{title}</label>
-        <span className={`desInfo ${className}`}>
+        <span className={`desInfo d-flex ${className}`}>
           <Link className="infoLink" to={to} target="_blank">
             {LinkTitle}
           </Link>

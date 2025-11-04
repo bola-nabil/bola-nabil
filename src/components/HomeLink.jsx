@@ -7,7 +7,7 @@ const HomeLink = ({ to, icon }) => {
     <>
       <li>
         <Link to={to} target="_blank">
-          <div className="homeIcon">
+          <div className="homeIcon d-flex justify-content-center align-items-center">
             <FontAwesomeIcon className="icon" icon={icon} />
           </div>
         </Link>

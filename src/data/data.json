@@ -99,6 +99,30 @@
   ],
   "projects": [
     {
+      "title": "blognest",
+      "liveLink": "https://blognest-three.vercel.app/",
+      "gitLink": "https://github.com/bola-nabil/blognest",
+      "imgUrl": "blognest.png"
+    },
+    {
+      "title": "blognest apis",
+      "liveLink": "https://blognest-apis-production.up.railway.app/",
+      "gitLink": "https://github.com/bola-nabil/BlogNest-apis",
+      "imgUrl": "blognest-apis.png"
+    },
+    {
+      "title": "Ebsar",
+      "liveLink": "https://ebsar-frontend-q1cg.vercel.app/",
+      "gitLink": "https://github.com/bola-nabil/ebsar-frontend",
+      "imgUrl": "ebsar.png"
+    },
+    {
+      "title": "Ebsar Apis",
+      "liveLink": "https://ebsar-production.up.railway.app/",
+      "gitLink": "https://github.com/bola-nabil/ebsar",
+      "imgUrl": "ebsar-apis.png"
+    },
+    {
       "title": "Clock",
       "liveLink": "https://bola-nabil.github.io/clock/",
       "gitLink": "https://github.com/bola-nabil/clock",
@@ -151,12 +175,6 @@
       "liveLink": "https://bola-nabil.github.io/bola-nabil/",
       "gitLink": "https://github.com/bola-nabil/bola-nabil.git",
       "imgUrl": "myWebsite.jpg"
-    },
-    {
-      "title": "Ibsar",
-      "liveLink": "http://ebsar.website/",
-      "gitLink": "https://github.com/bola-nabil/Ibsar.git",
-      "imgUrl": "ibsar.jpg"
     },
     {
       "title": "Kasper",

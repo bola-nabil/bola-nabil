@@ -7,8 +7,8 @@ const Experience = ({ title, year, company, description }) => {
           <h3>{title}</h3>
         </div>
         <div className="resumeContent">
-          <div className="resumeInside">
-            <div className="year">
+          <div className="resumeInside p-4">
+            <div className="year position-relative fw-bold">
               <p>{year}</p>
             </div>
             <h3>{company}</h3>

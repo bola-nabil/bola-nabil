@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import PageTitle from "../components/PageTitle";
 import Information from "../components/Information";
 import profile from "../data/data.json";
+import { calcAge } from "../utilts/calcAge";
 import "../styles/about.css";
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
               <img src={require("../photos/myPhoto.jpg")} alt="not found" />
             </div>
             <div className="aboutBox">
-              <div className="title">
+              <div className="title p-4 fs-5 text-secondary">
                 <p>
                   Hi! My name is bola nabil. I graduated from the Department of
                   Computer Science in 2023. I love the field of programming very
@@ -42,6 +43,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
+
           </div>
           <div className="aboutInfo">
             <div className="calOne">
@@ -57,7 +59,7 @@ const About = () => {
                 <Information
                   title="Phone: "
                   info={profile.contact.phone}
-                  className="infoLink"
+                  className="infoLink text-decoration-none"
                 />
                 <Information
                   title="Github: "
@@ -68,7 +70,7 @@ const About = () => {
             </div>
             <div className="calTwo">
               <ul>
-                <Information title="Age: " info={theAge()} />
+                <Information title="Age: " info={calcAge()} />
                 <Information title="Experience: " info={profile.experience} />
                 <Information title="Degree: " info={profile.degree} />
                 <Information
@@ -97,17 +99,3 @@ const About = () => {
 };
 
 export default About;
-
-const theAge = () => {
-  const today = new Date();
-  const birthDate = new Date("2001-03-10");
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const monthDiff = today.getMonth() - birthDate.getMonth();
-  if (
-    monthDiff < 0 ||
-    (monthDiff === 0 && today.getDate() < birthDate.getDate())
-  ) {
-    age--;
-  }
-  return age;
-};

@@ -51,7 +51,7 @@ const Resume = () => {
           />
 
           <div className="resumeBox">
-            <div className="resumeTitle">
+            <div className="resumeTitle position-relative">
               <h3>Frontend Skills</h3>
             </div>
             <div className="resumeSkills">
@@ -112,7 +112,7 @@ const Resume = () => {
         </div>
         <PageTitle title="Certificates" first="MY " second="Certificates" />
 
-        <div className="certificates">
+        <div className="certificates d-flex justify-content-center align-items-center flex-column">
           <div className="certificate">
             {displayedCertificates.map((img) => (
               <Certifcate
@@ -122,7 +122,7 @@ const Resume = () => {
               />
             ))}
           </div>
-          <div className="icons">
+          <div className="icons d-flex justify-content-center align-items-center fs-5">
             <div onClick={handlePrevious}>
               <FontAwesomeIcon icon={faAngleLeft} />
             </div>

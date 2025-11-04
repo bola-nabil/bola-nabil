@@ -58,7 +58,7 @@ const NavBar = () => {
       <Container>
         <Link
           to="/"
-          className={`nav-home nav-title ${
+          className={`nav-home nav-title fs-4 text-white fw-bold text-decoration-none d-flex align-items-center${
             activeItem === "bola-nabil" ? "active-home" : ""
           }`}
           onClick={() => {
@@ -75,7 +75,7 @@ const NavBar = () => {
             <Link
               key={index}
               to={data.linkPath}
-              className={`nav-home ps-5 ${
+              className={`nav-home  text-decoration-none d-flex align-items-center ps-5 ${
                 activeItem === data.active ? "active-home" : ""
               }`}
               onClick={() => {
@@ -105,7 +105,7 @@ const NavBar = () => {
               <Link
                 key={index}
                 to={data.linkPath}
-                className={`nav ${activeItem === data.active ? "active" : ""}`}
+                className={`nav text-decoration-none mt-4 text-white text-uppercase${activeItem === data.active ? "active" : ""}`}
                 onClick={() => {
                   handleItemClick(data.active);
                   handleClose();

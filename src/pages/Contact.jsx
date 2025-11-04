@@ -42,25 +42,25 @@ const Contact = () => {
 
         <div className="contactSection">
           <ContactCard
-            className="contactLocation"
+            className="contactLocation d-flex flex-column justify-content-center align-items-center position-relative p-4"
             icon={faLocationDot}
             title="My Location:"
             description={profile.city}
           />
           <ContactCard
-            className="contactPhone"
+            className="contactPhone d-flex flex-column justify-content-center align-items-center position-relative p-4"
             icon={faPhone}
             title="Phone Number:"
             classContact="phoneNumber"
             description={profile.contact.phone}
           />
-          <div className="contactEmail">
+          <div className="contactEmail d-flex flex-column justify-content-center align-items-center position-relative p-4">
             <div className="contactIcon">
               <FontAwesomeIcon className="icon" icon={faEnvelope} />
             </div>
             <h2>Email Address:</h2>
             <Link
-              className="mailContact"
+              className="mailContact text-decoration-none"
               to={`mailto:${profile.contact.email}`}
             >
               {profile.contact.email}
@@ -96,6 +96,7 @@ const Contact = () => {
                 />
               </div>
               <textarea
+                className="w-100"
                 placeholder="Message*"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
