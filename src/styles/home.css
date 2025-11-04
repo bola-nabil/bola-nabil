@@ -1,16 +1,6 @@
 .homePage {
     background-image: url('../photos/homePage.jpg');
     background-size: cover;
-    height: 100vh;
-    position: relative;
-}
-
-.homeSection {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .homeSection .homeImage {
@@ -48,7 +38,6 @@
 }
 
 .homeTitle .hLinks {
-    display: flex;
     margin: 20px 0;
 }
 
@@ -61,9 +50,6 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-right: 15px;
 }
 
