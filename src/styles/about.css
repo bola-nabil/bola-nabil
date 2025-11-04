@@ -40,12 +40,6 @@
   -o-border-radius: 10px;
 }
 
-.aboutSection .aboutBox .title {
-  padding: 20px;
-  font-size: 18px;
-  color: #797575;
-}
-
 @media (max-width: 600px) {
   .aboutSection .aboutBox .title {
     font-size: 16px;
@@ -132,7 +126,6 @@
 }
 
 .aboutInfo .desInfo {
-  display: flex;
   margin-left: 120px;
   margin-top: -20px;
   font-size: 16px;
@@ -157,7 +150,6 @@
 }
 
 .aboutInfo .infoLink {
-  text-decoration: none;
   color: var(--header-color);
 }
 

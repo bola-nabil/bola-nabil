@@ -1,18 +1,11 @@
 .nav {
-    text-decoration: none;
-    color: white;
     padding-bottom: 4px;
-    margin-top: 20px;
-    text-transform: uppercase;
     border-bottom: 1px solid #676767;
 }
 
 .nav-home {
     color: white;
-    text-decoration: none;
     font-size: 18px;
-    display: flex;
-    align-items: center;
 }
 
 .nav-home:hover {
@@ -35,13 +28,6 @@
 
 .active-home {
     color: var(--main-color);
-}
-
-.nav-title {
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
 }
 
 .nav-title:hover {
