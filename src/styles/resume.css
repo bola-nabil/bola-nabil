@@ -167,13 +167,6 @@
   color: var(--header-color);
 }
 
-.certificates {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .certificate {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,11 +208,7 @@
 }
 
 .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
-  font-size: 20px;
   color: var(--main-color);
   cursor: pointer;
 }

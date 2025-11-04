@@ -9,13 +9,7 @@
 .contactSection .contactLocation,
 .contactSection .contactPhone,
 .contactSection .contactEmail {
-    position: relative;
     box-shadow: 5px 5px 10px #b9b5b5;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .contactSection .contactLocation:hover,
@@ -79,7 +73,6 @@
 
 .contactSection p,
 .contactSection .mailContact {
-    text-decoration: none;
     font-size: 18px;
     color: var(--header-color)
 }
@@ -131,7 +124,6 @@
 }
 
 .contactMessage .messageBox textarea {
-    width: 100%;
     height: 100px;
     margin-bottom: 25px;
 }
