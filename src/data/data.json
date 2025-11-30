@@ -99,6 +99,12 @@
   ],
   "projects": [
     {
+      "title": "aagento",
+      "liveLink": "https://aagento-i2a4.vercel.app/",
+      "gitLink": "https://github.com/bola-nabil/aagento",
+      "imgUrl": "aagento.png"
+    },
+    {
       "title": "blognest",
       "liveLink": "https://blognest-three.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/blognest",
