@@ -3,12 +3,20 @@ import data from "../data/data.json";
 
 const useData = () => {
   const [content, setContent] = useState(null);
+  const [loading, setLoadiing] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setContent(data);
+    try {
+      setContent(data);
+      setLoadiing(false);
+    } catch(err) {
+        setError("Failed to load data");
+        setLoadiing(false);
+    }
   }, []);
 
-  return content;
+  return {content, loading, error};
 };
 
 export default useData;
