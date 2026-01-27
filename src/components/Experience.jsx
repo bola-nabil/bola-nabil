@@ -2,12 +2,12 @@ import React from "react";
 const Experience = ({ title, year, company, description }) => {
   return (
     <>
-      <div className="resumeBox">
-        <div className="resumeTitle">
+      <div className="resume-box">
+        <div className="resume-title">
           <h3>{title}</h3>
         </div>
-        <div className="resumeContent">
-          <div className="resumeInside p-4">
+        <div className="resume-content">
+          <div className="resume-inside p-4">
             <div className="year position-relative fw-bold">
               <p>{year}</p>
             </div>

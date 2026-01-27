@@ -5,7 +5,7 @@ const ContactCard = ({ className, icon, title, classContact, description }) => {
   return (
     <>
       <div className={className}>
-        <div className="contactIcon">
+        <div className="contact-icon">
           <FontAwesomeIcon className="icon" icon={icon} />
         </div>
         <h2>{title}</h2>

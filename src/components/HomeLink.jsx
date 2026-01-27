@@ -5,13 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const HomeLink = ({ to, icon }) => {
   return (
     <>
-      <li>
         <Link to={to} target="_blank">
-          <div className="homeIcon d-flex justify-content-center align-items-center">
+          <div className="home-icon d-flex justify-content-center align-items-center">
             <FontAwesomeIcon className="icon" icon={icon} />
           </div>
         </Link>
-      </li>
     </>
   );
 };
