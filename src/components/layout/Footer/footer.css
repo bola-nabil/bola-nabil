@@ -1,0 +1,18 @@
+.footer-content {
+  margin-top: 40px;
+  height: 60px;
+}
+
+.footer-content p {
+  color: var(--second-color);
+}
+
+.counter {
+  color: var(--main-color);
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 14px;
+  }
+}
