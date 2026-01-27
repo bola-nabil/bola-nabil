@@ -1,6 +1,6 @@
 {
   "name": "Bola Nabil",
-  "job-title": "Software Engineer",
+  "jobTitle": "Software Engineer",
   "birthday": "10 Mar, 2001",
   "city": "Al-Fayoum, Egypt",
   "college": "Akhbar El Youm Academy",
@@ -44,56 +44,62 @@
   "certifcates": [
     {
       "id": 1,
-      "image": "icpc2021.jpg",
       "title": "Programming Contest",
-      "description": "The 2021 MET Academy Collegiate Programming Contest"
+      "description": "The 2021 MET Academy Collegiate Programming Contest",
+      "image": "icpc2021.jpg"
     },
     {
       "id": 2,
-      "image": "icpc2021x.jpg",
       "title": "Programming Contest",
-      "description": "The 2021 ICPC Egyption Collegiate Programming Contest"
+      "description": "The 2021 ICPC Egyption Collegiate Programming Contest",
+      "image": "icpc2021x.jpg"
     },
     {
       "id": 3,
-      "image": "icpc2022.jpg",
       "title": "Programming Contest",
-      "description": "The 2022 ICPC ECPC Qualifications Collegiate Programming Contest"
+      "description": "The 2022 ICPC ECPC Qualifications Collegiate Programming Contest",
+      "image": "icpc2022.jpg"
     },
     {
       "id": 4,
-      "image": "icpc2021.jpg",
       "title": "Programming Contest",
-      "description": "The 2022 ICPC Egyption Collegiate Programming Contest"
+      "description": "The 2022 ICPC Egyption Collegiate Programming Contest",
+      "image": "icpc2021.jpg"
     },
     {
       "id": 5,
-      "image": "javascript.jpg",
       "title": "Javascript Basic",
-      "description": "Javascipt Basic certificate from Hackerrank"
+      "description": "Javascipt Basic certificate from Hackerrank",
+      "image": "javascript.jpg"
     },
     {
       "id": 6,
-      "image": "css.jpg",
       "title": "Css",
-      "description": "Css certificate from Hackerrank"
+      "description": "Css certificate from Hackerrank",
+      "image": "css.jpg"
     },
     {
       "id": 7,
-      "image": "freelancer.jpg",
       "title": "Freelancer",
-      "description": "Learn to how use upwork and basic freelanceing"
+      "description": "Learn to how use upwork and basic freelanceing",
+      "image": "freelancer.jpg"
     },
     {
       "id": 8,
+      "title": "Freelancer",
+      "description": "Learn to how use upwork and basic freelanceing",
       "image": "responsive-freecodecamp.png"
     },
     {
       "id": 9,
+      "title": "Freelancer",
+      "description": "Learn to how use upwork and basic freelanceing",
       "image": "javascript-freecodecamp.png"
     },
     {
       "id": 10,
+      "title": "Freelancer",
+      "description": "Learn to how use upwork and basic freelanceing",
       "image": "frontend-freecodecamp.png"
     }
   ],
@@ -172,7 +178,7 @@
     },
     {
       "title": "Interviews Website",
-      "liveLink": "https://bola-nabil.github.io/Interviews/",
+      "liveLink": "https://interviews-blush.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/Interviews/",
       "imgUrl": "interviews.jpg"
     },
@@ -239,7 +245,7 @@
   ],
   "contact": {
     "phone": "(+20) 102 614 6442",
-    "email": "bolanabil404@gmail.com"
+    "email": "bolanabil401@gmail.com"
   },
   "websites": {
     "portfolio": "https://bola-nabil.github.io/bola-nabil",
@@ -247,11 +253,13 @@
     "hackerrank": "https://www.hackerrank.com/profile/bolaNabil",
     "leetcode": "https://www.leetcode.com/bola-nabil"
   },
-  "social": {
-    "facebook": "https://www.facebook.com/bolanabil404",
-    "youtube": "https://www.youtube.com/@bola-nabil",
-    "linkedin": "https://www.linkedin.com/in/bolanabil"
-  },
+  "social": [
+    {"id": 1, "website": "https://www.facebook.com/bolanabil404", "icon": "faFacebookF"},
+    {"id": 2, "website": "https://www.youtube.com/@bola-nabil", "icon": "faYoutube"},
+    {"id": 3, "website": "https://www.linkedin.com/in/bolanabil", "icon": "faLinkedinIn"},
+    {"id": 4, "website": "https://github.com/bola-nabil", "icon": "faGithub"}
+
+  ],
   "cv": {
     "frontend": "https://drive.google.com/file/d/1SH-hmYfIto6ZHf_QwXZmQ9Xq57Ug2lLE/view?usp=sharing"
   }
