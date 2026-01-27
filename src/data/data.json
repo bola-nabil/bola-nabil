@@ -5,7 +5,24 @@
   "city": "Al-Fayoum, Egypt",
   "college": "Akhbar El Youm Academy",
   "degree": "Bachelor of Computer Science",
-  "experience": "0-1 Years",
+  "experience-years": "0-1 Years",
+  "experience": [
+    {
+      "id": 1,
+      "title": "Education",
+      "year": "2019-09-20",
+      "company": "Ahkbar El Youm Academy",
+      "description": "Bachelor of Computer Science"
+    },
+    {
+      "id": 2,
+      "title": "Experience",
+      "year": "2023-10-01",
+      "company": "Upwork",
+      "description": "Frontend Developer"
+    }
+
+  ],
   "skills": {
     "frontend": [
       { "id": 1, "skillsTitle": "html", "skillsCase": "80%" },
