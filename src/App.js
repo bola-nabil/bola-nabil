@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Resume from "./pages/Resume";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home/Home.jsx";
+import About from "./pages/About/About.jsx";
+import Resume from "./pages/Resume/Resume.jsx";
+import Projects from "./pages/Projects/Projects.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
 import NotFound from "./pages/NotFound";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/layout/NavBar/NavBar.js";
 
 const App = () => {
   return (
