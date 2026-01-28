@@ -23,6 +23,74 @@
     }
 
   ],
+  "about-me": [
+    {
+      "id": 1,
+      "title": "Birthday",
+      "content": "10 Mar, 2001"
+    },
+    {
+      "id": 2,
+      "title": "City",
+      "content": "Al-Fayoum, Egypt"
+    },
+        {
+      "id": 3,
+      "title": "Study",
+      "content": "Akhbar El Youm Academy"
+    },
+    {
+      "id": 4,
+      "title": "Degree",
+      "content": "Bachelor of Computer Science"
+    },
+    {
+      "id": 5,
+      "title": "Experience",
+      "content": "0-1 Years"
+    },
+    {
+      "id": 6,
+      "title": "Phone",
+      "content": "(+20) 102 614 6442"
+    },
+    {
+      "id": 7,
+      "title": "Email",
+      "content": "bolanabil401@gmail.com",
+      "link": "mailto:bolanabil401@gmail.com"
+    },
+    {
+      "id": 8,
+      "title": "Portfolio",
+      "content": "https://bola-nabil.github.io/bola-nabil",
+      "link": "https://bola-nabil.github.io/bola-nabil"
+    },
+    {
+      "id": 9,
+      "title": "Linkedin",
+      "content": "https://www.linkedin.com/in/bolanabil",
+      "link": "https://www.linkedin.com/in/bolanabil"
+    },
+    {
+      "id": 10,
+      "title": "Github",
+      "content": "https://www.github.com/bola-nabil",
+      "link": "https://www.github.com/bola-nabil"
+    },
+    {
+      "id": 11,
+      "title": "Hackerrank",
+      "content": "https://www.hackerrank.com/profile/bolaNabil",
+      "link": "https://www.hackerrank.com/profile/bolaNabil"
+    },
+    {
+      "id": 12,
+      "title": "Leetcode",
+      "content": "https://www.leetcode.com/bola-nabil",
+      "link": "https://www.leetcode.com/bola-nabil"
+    }
+  ],
   "skills": {
     "frontend": [
       { "id": 1, "skillsTitle": "html", "skillsCase": "80%" },
