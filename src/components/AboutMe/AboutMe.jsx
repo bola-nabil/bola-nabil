@@ -1,19 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./AboutMe.css";
 
 const AboutMe = ({title, content, linkPath}) => {
-  console.log("link", linkPath)
   return (
     <div>
        {
           linkPath === undefined ? (
-           <div>
-                <h2>{title}</h2>
-                <p>{content}</p>
+           <div className='pb-2'>
+                <h2 className='fs-3 fw-bold'>{title}</h2>
+                <p className=''>{content}</p>
             </div>
           ): (
-            <div>
-                <h2>{title}</h2>
+            <div className='pb-3'>
+                <h2 className='fs-3 fw-bold'>{title}</h2>
                 <Link to={linkPath} target='_blank'>
                   {content}
                 </Link>

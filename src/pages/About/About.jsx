@@ -9,8 +9,6 @@ import "./about.css";
 const About = () => {
   const {content: data} = useData();
 
-  console.log("data", data);
-
   return (
     <>
       <div className="about">

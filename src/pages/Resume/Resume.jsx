@@ -11,11 +11,9 @@ import useData from "../../hooks/useData";
 import "./resume.css";
 
 const Resume = () => {
-  const data = useData();
+  const {content: data} = useData();
 
   const certificates = data?.certifcates || [];
-
-  console.log(certificates)
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerPage = 3;
@@ -42,18 +40,18 @@ const Resume = () => {
       <div className="container">
         <PageTitle title="Resume" first="MY " second="Resume" />
         <div className="resume-section">
-          <Experience
-            title="Education"
-            year="2019-09-20"
-            company="Ahkbar El Youm Academy"
-            description="Bachelor of Computer Science"
-          />
-          <Experience
-            title="Experience"
-            year="2023-10-01"
-            company="Upwork"
-            description="Frontend Developer"
-          />
+
+          {
+            data?.experience.map((experience) => (
+              <Experience
+                key={experience.id}
+                title={experience.title}
+                year={experience.year}
+                company={experience.company}
+                description={experience.description}
+                />
+            ) )
+          }
 
           <div className="resume-box">
             <div className="resume-title position-relative">
