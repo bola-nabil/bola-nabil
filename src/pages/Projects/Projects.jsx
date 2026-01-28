@@ -9,7 +9,7 @@ import { Row, Col } from "react-bootstrap";
 import "./projects.css";
 
 const Projects = () => {
-    const data = useData();
+    const {content: data} = useData();
 
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(0);
