@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/layout/Footer/Footer";
 import PageTitle from "../../components/ui/PageTitle";
-import Information from "../../components/Information";
+import AboutMe from "../../components/AboutMe/AboutMe";
 import  useData from "../../hooks/useData";
-import { calcAge } from "../../utilts/calcAge";
 import "./about.css";
 
 const About = () => {
-  const data = useData();
+  const {content: data} = useData();
 
+  console.log("data", data);
 
   return (
     <>
@@ -49,50 +49,11 @@ const About = () => {
 
           </div>
           <div className="about-info">
-            <div className="cal-one">
-              <ul>
-                <Information title="Birthday: " info={data?.birthday} />
-                <Information title="City: " info={data?.city} />
-                <Information title="Study: " info={data?.college} />
-                <Information
-                  title="Portfolio: "
-                  to={data?.websites?.portfolio}
-                  LinkTitle="bola-nabil"
-                />
-                <Information
-                  title="Phone: "
-                  info={data?.contact?.phone}
-                  className="info-link text-decoration-none"
-                />
-                <Information
-                  title="Github: "
-                  to={data?.websites?.github}
-                  LinkTitle="bola-nabil"
-                />
-              </ul>
-            </div>
-            <div className="cal-two">
-              <ul>
-                <Information title="Age: " info={calcAge()} />
-                <Information title="Experience: " info={data?.experience} />
-                <Information title="Degree: " info={data?.degree} />
-                <Information
-                  title="Email: "
-                  to={`mailto:${data?.contact?.email}`}
-                  LinkTitle={data?.contact?.email}
-                />
-                <Information
-                  title="Hackerrank: "
-                  to={data?.websites?.hackerrank}
-                  LinkTitle="bolaNabil"
-                />
-                <Information
-                  title="leetcode: "
-                  to={data?.websites?.leetcode}
-                  LinkTitle="bola-nabil"
-                />
-              </ul>
-            </div>
+            {
+              data?.["about-me"]?.map((info) => (
+                <AboutMe key={info.id} title={info.title} content={info.content} linkPath={info.link}/>
+              ))
+            }
           </div>
         </div>
       </div>
