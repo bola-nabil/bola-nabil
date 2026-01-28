@@ -14,7 +14,7 @@ import  useData from "../../hooks/useData";
 import "./contact.css";
 
 const Contact = () => {
-  const data = useData();
+  const {content: data} = useData();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
