@@ -24,7 +24,7 @@ const Home = () => {
       <div className="overlay position-absolute left-0 top-0 w-100 h-100"></div>
       <div className="home-section position-relative d-flex justify-content-center align-items-center vh-100">
         <div className="home-image">
-          <img src={require("../../assets/images/myPhoto.jpg")} alt="not found" />
+          <img src={require("../../assets/images/my-photo.jpg")} alt="not found" />
         </div>
         <div className="about-section">
           <div className="home-title">

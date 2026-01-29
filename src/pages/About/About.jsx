@@ -16,7 +16,7 @@ const About = () => {
           <PageTitle title="About" first="About " second="Me" />
           <div className="about-section">
             <div className="box-image">
-              <img src={require("../../assets/images/myPhoto.jpg")} alt="not found" />
+              <img src={require("../../assets/images/my-photo.jpg")} alt="not found" />
             </div>
             <div className="about-box">
               <div className="title p-4 fs-5 text-secondary">
