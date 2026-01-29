@@ -52,7 +52,8 @@
     {
       "id": 6,
       "title": "Phone",
-      "content": "(+20) 102 614 6442"
+      "content": "(+20) 102 614 6442",
+      "link": "tel:01026146442"
     },
     {
       "id": 7,
@@ -63,8 +64,8 @@
     {
       "id": 8,
       "title": "Portfolio",
-      "content": "https://bola-nabil.github.io/bola-nabil",
-      "link": "https://bola-nabil.github.io/bola-nabil"
+      "content": "https://bola-nabil.vercel.app/",
+      "link": "https://bola-nabil.vercel.app/"
     },
     {
       "id": 9,
@@ -328,10 +329,28 @@
       "imgUrl": "atcoder.jpg"
     }
   ],
-  "contact": {
-    "phone": "(+20) 102 614 6442",
-    "email": "bolanabil401@gmail.com"
-  },
+  "contact": [
+    {
+      "id": 1,
+      "title": "Location",
+      "content": "Al-Fayoum, Egypt",
+      "icon": "location"
+    },
+    {
+      "id": 2,
+      "title": "Phone Number",
+      "content": "(+20) 102 614 6442",
+      "link": "tel:01026146442",
+      "icon": "phone"
+    },
+    {
+      "id": 3,
+      "title": "Email Address",
+      "content": "bolanabil401@gmail.com",
+      "link": "mailto:bolanabil401@gmail.com",
+      "icon": "email"
+    }
+  ],
   "websites": {
     "portfolio": "https://bola-nabil.github.io/bola-nabil",
     "github": "https://www.github.com/bola-nabil",
