@@ -9,7 +9,7 @@ import {
   faListCheck,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import "./NavBar.css";
+import "./nav-bar.css";
 
 const LinkData = [
   {
