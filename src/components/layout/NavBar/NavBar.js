@@ -11,6 +11,40 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
 
+const LinkData = [
+  {
+    linkPath: "/",
+    active: "bola-nabil",
+    iconLink: faHouse,
+    title: "Home",
+  },
+  {
+    linkPath: "/about",
+    active: "about",
+    iconLink: faUser,
+    title: "About",
+  },
+  {
+    linkPath: "/resume",
+    active: "resume",
+    iconLink: faFile,
+    title: "Resume",
+  },
+  {
+    linkPath: "/projects",
+    active: "projects",
+    iconLink: faListCheck,
+    title: "Projects",
+  },
+  {
+    linkPath: "/contact",
+    active: "contact",
+    iconLink: faPhone,
+    title: "Contact",
+  },
+];
+
+
 const NavBar = () => {
   const [activeItem, setActiveItem] = useState("bola-nabil");
   const [show, setShow] = useState(false);
@@ -20,45 +54,13 @@ const NavBar = () => {
     setActiveItem(itemName);
   };
 
-  const LinkData = [
-    {
-      linkPath: "/",
-      active: "bola-nabil",
-      iconLink: faHouse,
-      title: "Home",
-    },
-    {
-      linkPath: "/about",
-      active: "about",
-      iconLink: faUser,
-      title: "About",
-    },
-    {
-      linkPath: "/resume",
-      active: "resume",
-      iconLink: faFile,
-      title: "Resume",
-    },
-    {
-      linkPath: "/projects",
-      active: "projects",
-      iconLink: faListCheck,
-      title: "Projects",
-    },
-    {
-      linkPath: "/contact",
-      active: "contact",
-      iconLink: faPhone,
-      title: "Contact",
-    },
-  ];
 
   return (
     <Navbar bg="dark" data-bs-theme="dark" className="nav-size" fixed="top">
       <Container>
         <Link
           to="/"
-          className={`nav-home nav-title fs-4 text-white fw-bold text-decoration-none d-flex align-items-center${
+          className={`nav-home nav-title fs-4 text-white fw-bold d-flex align-items-center${
             activeItem === "bola-nabil" ? "active-home" : ""
           }`}
           onClick={() => {
@@ -67,7 +69,7 @@ const NavBar = () => {
         >
           bola-nabil
         </Link>
-        <button onClick={handleShow} className="toggle canvas-control">
+        <button onClick={handleShow} className="toggle bg-white text-black canvas-control">
           <span className="menu-icon">&#9776;</span>
         </button>
         <Nav className="link-control me-auto links-move">
@@ -75,7 +77,7 @@ const NavBar = () => {
             <Link
               key={index}
               to={data.linkPath}
-              className={`nav-home  text-decoration-none d-flex align-items-center ps-5 ${
+              className={`nav-home text-white d-flex align-items-center ps-5 ${
                 activeItem === data.active ? "active-home" : ""
               }`}
               onClick={() => {
@@ -105,7 +107,7 @@ const NavBar = () => {
               <Link
                 key={index}
                 to={data.linkPath}
-                className={`nav text-decoration-none mt-4 text-white text-uppercase${activeItem === data.active ? "active" : ""}`}
+                className={`nav mt-4 text-white text-uppercase${activeItem === data.active ? "active" : ""}`}
                 onClick={() => {
                   handleItemClick(data.active);
                   handleClose();
