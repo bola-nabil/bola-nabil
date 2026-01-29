@@ -3,7 +3,7 @@ import useData  from "../../hooks/useData";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../../components/layout/Footer/Footer";
-import PageTitle from "../../components/ui/PageTitle";
+import PageTitle from "../../components/ui/PageTitle/PageTitle";
 import ProjectsCard from "../../components/ProjectsCard";
 import { Row, Col } from "react-bootstrap";
 import "./projects.css";
