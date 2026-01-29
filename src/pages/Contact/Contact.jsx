@@ -6,8 +6,8 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/layout/Footer/Footer";
-import PageTitle from "../../components/ui/PageTitle/PageTitle";
-import ContactCard from "../../components/ContactCard/ContactCard";
+import PageTitle from "../../components/ui/paget-title/PageTitle";
+import ContactCard from "../../components/contact-card/ContactCard";
 import  useData from "../../hooks/useData";
 import "./contact.css";
 
