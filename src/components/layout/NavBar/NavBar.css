@@ -4,7 +4,6 @@
 }
 
 .nav-home {
-    color: white;
     font-size: 18px;
 }
 
@@ -39,9 +38,7 @@
     -o-transition: 0.5s;
 }
 
-.toggle{
-    background-color: white;
-    color: black;
+.toggle {
     width: 55px;
     padding: 5px;
     border-radius: 7px;
@@ -64,8 +61,7 @@
 }
 
 .nav-size {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .links-move {
@@ -76,9 +72,6 @@
     .canvas-control {
         display: none;
     }
-}
-
-@media (min-width: 1200px) {
     .link-control {
         display: flex;
     }
