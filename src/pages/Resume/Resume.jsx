@@ -4,9 +4,9 @@ import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/layout/Footer/Footer";
 import Certifcate from "../../components/Certficate/Certficate";
-import Skills from "../../components/Skills/Skills";
+import SkillsBox from "../../components/Skills/SkillsBox";
 import Experience from "../../components/Experience";
-import PageTitle from "../../components/ui/PageTitle";
+import PageTitle from "../../components/ui/PageTitle/PageTitle";
 import useData from "../../hooks/useData";
 import "./resume.css";
 
@@ -68,65 +68,11 @@ const Resume = () => {
             ) )
           }
 
-          <div className="resume-box">
-            <div className="resume-title position-relative">
-              <h3>Frontend Skills</h3>
-            </div>
-            <div className="resume-skills">
-              {data?.skills?.frontend?.map((skill) => (
-                <Skills
-                  key={skill?.id}
-                  title={skill?.skillsTitle}
-                  status={skill?.skillsCase}
-                  style={skill?.skillsCase}
-                />
-              ))}
-            </div>
-          </div>
+          <SkillsBox title="Frontend Skills" dataLink={data?.skills?.frontend}/>
+          <SkillsBox title="Concepts Skills" dataLink={data?.skills?.concepts}/>
+          <SkillsBox title="Professional Skills" dataLink={data?.skills?.professional}/>
+          <SkillsBox title="Knowledge" dataLink={data?.skills?.knowledges} icon={faBolt}/>
 
-          <div className="resume-box">
-            <div className="resume-title">
-              <h3>Concepts Skills</h3>
-            </div>
-            <div className="resume-skills">
-              {data?.skills?.concepts?.map((skill) => (
-                <Skills
-                  key={skill?.id}
-                  title={skill?.skillsTitle}
-                  status={skill?.skillsCase}
-                  style={skill?.skillsCase}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="resume-box">
-            <div className="resume-title">
-              <h3>Professional Skills</h3>
-            </div>
-            <div className="resume-skills">
-              {data?.skills?.professional?.map((skill) => (
-                <Skills
-                  key={skill?.id}
-                  title={skill?.skillsTitle}
-                  status={skill?.skillsCase}
-                  style={skill?.skillsCase}
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className="resume-box">
-            <div className="resume-title">
-              <h3>Knowledge</h3>
-            </div>
-            {data?.skills?.knowledges?.map((skill) => (
-              <div className="know-skills" key={skill?.id}>
-                <FontAwesomeIcon className="know-Icon" icon={faBolt} />
-                <p>{skill.skillsTitle}</p>
-              </div>
-            ))}
-          </div>
         </div>
         <PageTitle title="Certificates" first="MY " second="Certificates" />
 
@@ -140,7 +86,7 @@ const Resume = () => {
               />
             ))}
           </div>
-          <div className="icons d-flex justify-content-center align-items-center fs-5">
+          <div className="icons center-row fs-5">
             <div onClick={handlePrevious}>
               <FontAwesomeIcon icon={faAngleLeft} />
             </div>
