@@ -1,97 +1,4 @@
-.contact-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
-    margin-top: 70px;
-    padding: 20px;
-}
-
-.contact-section .contact-location,
-.contact-section .contact-phone,
-.contact-section .contact-email {
-    box-shadow: 5px 5px 10px #b9b5b5;
-}
-
-.contact-section .contact-location:hover,
-.contact-section .contact-phone:hover,
-.contact-section .contact-email:hover {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
-@media (min-width: 778px) and (max-width: 992px) {
-    .contact-section .contact-email {
-        margin-left: 180px;
-        width: 300px;
-    }
-}
-
-.contact-section .contact-location:hover{
-    animation: up-to-down 2s linear;
-    -webkit-animation: up-to-down 2s linear;
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
-.contact-section .contact-icon {
-    width: 80px;
-    height: 80px;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.contact-section .contact-icon .icon {
-    font-size: 30px;
-    color: var(--second-color);
-}
-
-.contact-section h2 {
-    font-weight: 700;
-    font-size: 22px;
-    color: var(--header-color);
-    margin-bottom: 15px;
-}
-
-.contact-section p,
-.contact-section .mail-contact {
-    font-size: 18px;
-    color: var(--header-color)
-}
-
-.contact-section .mail-contact:hover,
-.contact-section .phone-number:hover{
-    cursor: pointer;
-    color: var(--main-color);
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    -ms-transition: 0.6s;
-    -o-transition: 0.6s;
-}
-
 .contact-message {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 40px;
     margin-top: 50px;
     margin-bottom: 60px;
 }
@@ -117,6 +24,8 @@
     font-size: 17px;
     margin-top: 25px;
     padding: 10px 0;
+    display: inline-flex;
+    width: 45%;
 }
 
 .contact-message .message-box input[type='email'] {
@@ -143,27 +52,23 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
     color: var(--second-color);
     background-color: var(--main-color);
     font-size: 18px;
-    font-weight: bold;
     cursor: pointer;
 }
 
 .contact-message .message-box .submit input[type='submit']:hover {
     color: var(--main-color);
     background-color: #fbfbfb;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--main-color) !important;
     transition: 0.6s linear;
     -webkit-transition: 0.6s linear;
     -moz-transition: 0.6s linear;
     -ms-transition: 0.6s linear;
     -o-transition: 0.6s linear;
 }
+
 .contact-message .map-box {
     box-shadow: 5px 5px 10px #b9b5b5;
 }
@@ -179,28 +84,12 @@
 }
 
 @media (max-width: 600px) {
-    .contact-message {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-left: 20px;
-    }
-    .contact-message .message-box {
-        width: 310px;
-    }
-    .map-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 310px;
+    .message-box input {
+        width: 100% !important;
     }
     .contact-message .message-box input[type='email'] {
         display: flex;
         flex-direction: column;
         margin-left: 0;
-    }
-    .contact-message .message-box textarea {
-        width: 100%;
     }
 }
