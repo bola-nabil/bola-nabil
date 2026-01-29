@@ -76,6 +76,7 @@
   margin-left: 40px;
   margin-top: 20px;
 }
+
 .resume-box .resume-inside .year {
   position: relative;
   background-color: var(--main-color);
@@ -167,16 +168,6 @@
   color: var(--header-color);
 }
 
-.certificate {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 100px 0 50px 0;
-}
-
-
 .icons {
   gap: 20px;
   color: var(--main-color);
@@ -204,14 +195,5 @@
   }
   .resume-box .resume-inside h3:nth-child(3) {
     font-size: 12px;
-  }
-  .certificate {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 601px) and (max-width: 778px) {
-  .certificate {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
