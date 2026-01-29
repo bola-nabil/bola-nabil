@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
@@ -16,11 +16,26 @@ const Resume = () => {
   const certificates = data?.certifcates || [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+ 
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth <= 768) {
+        setItemsPerPage(1);
+      } else {
+        setItemsPerPage(3);
+      }
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNext = () => {
     if (currentIndex + itemsPerPage < certificates?.length) {
       setCurrentIndex(currentIndex + itemsPerPage);
+    } else {
+      setCurrentIndex(0);
     }
   };
 
@@ -115,8 +130,8 @@ const Resume = () => {
         </div>
         <PageTitle title="Certificates" first="MY " second="Certificates" />
 
-        <div className="certificates d-flex justify-content-center align-items-center flex-column">
-          <div className="certificate">
+        <div className="certificates center-col">
+          <div className="certificate center-row gap-3">
             {displayedCertificates?.map((img) => (
               <Certifcate
                 key={img?.id}
