@@ -4,7 +4,7 @@ import "./skills.css";
 const Skills = ({ title, status, style }) => {
   return (
     <div className="skill">
-      <h3>
+      <h3 className="text-uppercase">
         {title}
         <span>{status}</span>
       </h3>

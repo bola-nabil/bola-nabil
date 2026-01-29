@@ -5,7 +5,7 @@ import {
   faLinkedinIn,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import HomeLink from "../../components/HomeLink";
+import HomeLink from "../../components/home-link/HomeLink";
 import useData  from "../../hooks/useData";
 
 import "./home.css";

@@ -4,9 +4,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Footer from "../../components/layout/Footer/Footer";
 import PageTitle from "../../components/ui/PageTitle/PageTitle";
-import ProjectsCard from "../../components/ProjectsCard";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Row, Col } from "react-bootstrap";
-import "./projects.css";
 
 const Projects = () => {
     const {content: data} = useData();
@@ -36,13 +35,13 @@ const Projects = () => {
                   key={index}
                   className="mt-4 d-flex justify-content-center align-items-center"
                 >
-                  <ProjectsCard
+                  <ProjectCard
                     src={require(`../../assets/images/projects/${project.imgUrl}`)}
                     alt="not found"
                     title={project.title}
                     toSite={project.liveLink}
                     iconSite={faLink}
-                    className="project-icon"
+                    className="project-icon center-row"
                     toGit={project.gitLink}
                     iconGit={faGithub}
                   />
