@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
   faEnvelope,
@@ -9,9 +7,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/layout/Footer/Footer";
 import PageTitle from "../../components/ui/PageTitle";
-import ContactCard from "../../components/ContactCard";
+import ContactCard from "../../components/ContactCard/ContactCard";
 import  useData from "../../hooks/useData";
 import "./contact.css";
+
+const iconMap = {
+  location: faLocationDot,
+  phone: faPhone,
+  email: faEnvelope
+}
 
 const Contact = () => {
   const {content: data} = useData();
@@ -44,32 +48,13 @@ const Contact = () => {
         <PageTitle title="Contact" first="Get In " second="Touch" />
 
         <div className="contact-section">
-          <ContactCard
-            className="contact-location d-flex flex-column justify-content-center align-items-center position-relative p-4"
-            icon={faLocationDot}
-            title="My Location:"
-            description={data?.city}
-          />
-          <ContactCard
-            className="contact-phone d-flex flex-column justify-content-center align-items-center position-relative p-4"
-            icon={faPhone}
-            title="Phone Number:"
-            classContact="phoneNumber"
-            description={data?.contact?.phone}
-          />
-          <div className="contact-email d-flex flex-column justify-content-center align-items-center position-relative p-4">
-            <div className="contact-icon">
-              <FontAwesomeIcon className="icon" icon={faEnvelope} />
-            </div>
-            <h2>Email Address:</h2>
-            <Link
-              className="mail-contact"
-              to={`mailto:${data?.contact?.email}`}
-            >
-              {data?.contact?.email}
-            </Link>
-          </div>
+            {
+              data?.contact?.map((contact) => (
+                <ContactCard icon={iconMap[contact.icon]} title={contact.title} content={contact.content} linkPath={contact.link}/>
+              ))
+            }
         </div>
+
         <div className="contact-message">
           <div className="message-box">
             <form onSubmit={handleSubmit}>
@@ -105,8 +90,8 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
-              <div className="submit">
-                <input type="submit" value="Send Message" />
+              <div className="submit center-row">
+                <input type="submit" value="Send Message" className="fw-bold border-0 center-row" />
               </div>
             </form>
             {isSubmitted && (
@@ -114,12 +99,6 @@ const Contact = () => {
                 Success! The form was submitted successfully.
               </div>
             )}
-          </div>
-          <div className="map-box">
-            <iframe
-              title="location"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d258.44339217918514!2d30.90221538442333!3d29.36484403875814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1699171481734!5m2!1sar!2seg"
-            ></iframe>
           </div>
         </div>
       </div>
