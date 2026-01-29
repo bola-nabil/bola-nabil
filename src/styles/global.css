@@ -69,6 +69,19 @@ a {
   background-color: rgb(0 0 0 / 60%);
 }
 
+.center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .box-title {
   margin-top: 100px;
 }
