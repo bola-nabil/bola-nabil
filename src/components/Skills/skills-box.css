@@ -1,0 +1,51 @@
+.resume-section .resume-box {
+  box-shadow: 5px 5px 10px #b9b5b5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.resume-box .resume-title {
+  position: relative;
+}
+
+.resume-box .resume-title h3 {
+  font-size: 20px;
+  color: var(--header-color);
+  margin: 10px 0;
+}
+
+.resume-box .resume-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.resume-skills {
+  flex: 1;
+  margin-top: 40px;
+}
+
+.know-skills {
+  margin: 25px 0;
+}
+
+.know-skills .know-icon {
+  color: var(--main-color);
+}
+
+.know-skills p {
+  margin-left: 10px;
+  color: var(--header-color);
+}
+
+@media (max-width: 600px) {
+  .resume-section .resume-box {
+    width: 320px;
+  }
+}
