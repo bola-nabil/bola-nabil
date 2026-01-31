@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useData  from "../../hooks/useData";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -6,13 +6,21 @@ import Footer from "../../components/layout/Footer/Footer";
 import PageTitle from "../../components/ui/paget-title/PageTitle";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import { Row, Col } from "react-bootstrap";
+import {projectsMap} from "../../utilts/projectsMap";
 
 const Projects = () => {
     const {content: data} = useData();
 
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(0);
-  const totalPages = Math.ceil(data?.projects?.length / pageSize);
+
+  const projects = data?.projects ?? [];
+  const totalPages = Math.ceil(projects.length / pageSize);
+
+    useEffect(() => {
+      setCurrentPage(0);
+  }, [projects.length]);
+
   const nextPage = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages - 1));
   };
@@ -24,19 +32,20 @@ const Projects = () => {
 
 
   return (
-    <div className="projects">
+    <main className="projects">
       <div className="container">
         <PageTitle title="Projects" first="My " second="Projects" />
         <div className="mt-4">
           <Row sm="2" lg="3">
             {data?.projects
-              ?.map((project, index) => (
+              ?.slice(startIndex, endIndex)
+              .map((project, index) => (
                 <Col
-                  key={index}
+                  key={project.id}
                   className="mt-4 d-flex justify-content-center align-items-center"
                 >
                   <ProjectCard
-                    src={require(`../../assets/images/projects/${project.imgUrl}`)}
+                    src={projectsMap[project.imgUrl]}
                     alt="not found"
                     title={project.title}
                     toSite={project.liveLink}
@@ -47,7 +56,7 @@ const Projects = () => {
                   />
                 </Col>
               ))
-              .slice(startIndex, endIndex)}
+            }
           </Row>
           <div className="mt-4 text-center">
             <button
@@ -69,7 +78,7 @@ const Projects = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 };
 

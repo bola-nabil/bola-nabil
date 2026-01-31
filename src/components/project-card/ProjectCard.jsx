@@ -1,6 +1,5 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import "./project-card.css";
 
@@ -23,17 +22,19 @@ const ProjectCard = ({
         <Card.Title className="fw-bold project-title">{title}</Card.Title>
 
         <div className="d-flex justify-content-center gap-3 iconsBox">
-          <Link to={toSite} target="_blank">
+          <a href={toSite} target="_blank" rel="noopener noreferrer">
             <div className="icon-wrapper center-row text-white">
               <FontAwesomeIcon icon={iconSite} />
             </div>
-          </Link>
+          </a>
 
-          <Link to={toGit} target="_blank">
+          <a href={toGit} target="_blank"rel="noopener noreferrer"
+            aria-label={`View ${title} source code on GitHub`}
+          >
             <div className="icon-wrapper center-row text-white">
               <FontAwesomeIcon icon={iconGit} />
             </div>
-          </Link>
+          </a>
         </div>
       </Card.Body>
     </Card>
