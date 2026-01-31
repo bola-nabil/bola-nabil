@@ -31,7 +31,7 @@ export const projectsMap = {
     "ebsar.png": ebsar,
     "ebsar-apis.png": ebsarApis,
     "clock.png": clock,
-    "projects/drum-machine.png": drumMachine,
+    "drum-machine.png": drumMachine,
     "random-quote-machine.png": randomQuoteMachine,
     "technoit.png": technoit,
     "portfolio-template.png": portfolioTemplate,
