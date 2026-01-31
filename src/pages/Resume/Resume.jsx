@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
@@ -8,28 +8,31 @@ import SkillsBox from "../../components/Skills/SkillsBox";
 import Experience from "../../components/experience/Experience";
 import PageTitle from "../../components/ui/paget-title/PageTitle";
 import useData from "../../hooks/useData";
+import {certificatesMap} from "../../utilts/certificatesMap";
 import "./resume.css";
 
 const Resume = () => {
   const {content: data} = useData();
 
-  const certificates = data?.certifcates || [];
+  const certificates = useMemo(() => {
+    return data?.certifcates ?? [];
+  }, [data]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
  
   useEffect(() => {
-    const handleResize = () => {
-      if(window.innerWidth <= 768) {
-        setItemsPerPage(1);
-      } else {
-        setItemsPerPage(3);
-      }
-    }
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    const handleChange = (e) => {
+      setItemsPerPage(e.matches ? 1 : 3);
+    };
+
+    handleChange(mediaQuery);
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+}, []);
 
   const handleNext = () => {
     if (currentIndex + itemsPerPage < certificates?.length) {
@@ -42,16 +45,20 @@ const Resume = () => {
   const handlePrevious = () => {
     if (currentIndex - itemsPerPage >= 0) {
       setCurrentIndex(currentIndex - itemsPerPage);
+    } else {
+      setCurrentIndex(
+        Math.max(certificates.length - itemsPerPage, 0)
+      );
     }
   };
 
-  const displayedCertificates = certificates?.slice(
-    currentIndex,
-    currentIndex + itemsPerPage
+  const displayedCertificates = useMemo(
+    () => certificates.slice(currentIndex, currentIndex + itemsPerPage),
+    [certificates, currentIndex, itemsPerPage]
   );
 
   return (
-    <div className="resume">
+    <main className="resume">
       <div className="container">
         <PageTitle title="Resume" first="MY " second="Resume" />
         <div className="resume-section">
@@ -81,7 +88,7 @@ const Resume = () => {
             {displayedCertificates?.map((img) => (
               <Certifcate
                 key={img?.id}
-                src={require(`../../assets/images/certificate/${img?.image}`)}
+                src={certificatesMap[img?.image]}
                 alt={img?.title}
               />
             ))}
@@ -97,7 +104,7 @@ const Resume = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 };
 

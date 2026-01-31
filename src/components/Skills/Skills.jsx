@@ -9,7 +9,13 @@ const Skills = ({ title, status, style }) => {
         <span>{status}</span>
       </h3>
       <div className="the-progress">
-        <span style={{ width: style }}></span>
+        <span style={{ width: style }}
+          role="progressbar"
+          aria-valuenow={parseInt(style)}
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+        </span>
       </div>
     </div>
   );

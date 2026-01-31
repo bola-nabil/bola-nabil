@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./skills-box.css";
 
 const SkillsBox = ({title, dataLink, icon}) => {
+    const isKnowledge = Boolean(icon);
   return (
     <div className="resume-box">
         <div className="resume-title">
             <h3>{title}</h3>
         </div>
         {
-            icon === undefined ? (
+            !isKnowledge ? (
                 <div className="resume-skills">
                     {dataLink?.map((skill) => (
                     <Skills
@@ -25,7 +26,7 @@ const SkillsBox = ({title, dataLink, icon}) => {
             <div>
                 {dataLink?.map((skill) => (
                     <div className="know-skills d-flex" key={skill?.id}>
-                    <FontAwesomeIcon className="know-Icon" icon={icon} />
+                    <FontAwesomeIcon className="know-icon" icon={icon} />
                     <p>{skill.skillsTitle}</p>
                     </div>
                 ))}
