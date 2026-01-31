@@ -6,7 +6,7 @@ import Footer from "../../components/layout/Footer/Footer";
 import Certifcate from "../../components/Certficate/Certficate";
 import SkillsBox from "../../components/Skills/SkillsBox";
 import Experience from "../../components/experience/Experience";
-import PageTitle from "../../components/ui/PageTitle/PageTitle";
+import PageTitle from "../../components/ui/paget-title/PageTitle";
 import useData from "../../hooks/useData";
 import "./resume.css";
 
