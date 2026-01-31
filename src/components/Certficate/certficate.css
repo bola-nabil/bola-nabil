@@ -26,12 +26,9 @@
 }
 
 .certificate-box img {
+  max-width: 100%;
   width: 280px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  height: auto;
 }
 
 @media (max-width: 600px) {
