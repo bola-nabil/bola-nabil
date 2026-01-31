@@ -7,24 +7,24 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import HomeLink from "../../components/home-link/HomeLink";
 import useData  from "../../hooks/useData";
-
+import myPhoto from "../../assets/images/my-photo.jpg";
 import "./home.css";
 
 const socialIcons = {
-  faFacebookF: faFacebookF,
-  faYoutube: faYoutube,
-  faLinkedinIn: faLinkedinIn,
-  faGithub: faGithub
+  faFacebookF,
+   faYoutube,
+   faLinkedinIn,
+   faGithub
 };
 
 const Home = () => {
   const {content: data} = useData();
   return (
-    <div className="home-page position-relative vh-100">
+    <main className="home-cover position-relative vh-100">
       <div className="overlay position-absolute left-0 top-0 w-100 h-100"></div>
       <div className="home-section position-relative d-flex justify-content-center align-items-center vh-100">
         <div className="home-image">
-          <img src={require("../../assets/images/my-photo.jpg")} alt="not found" />
+          <img src={myPhoto} alt="Bola Nabil profile" />
         </div>
         <div className="about-section">
           <div className="home-title">
@@ -37,7 +37,7 @@ const Home = () => {
             </p>
             <div className="h-links d-flex">
               {
-                data?.social.map((link) => (
+                data?.social?.map((link) => (
                   <div key={link.id}>
                       <HomeLink to={link.website} icon={socialIcons[link.icon]}/>
                   </div>
@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
