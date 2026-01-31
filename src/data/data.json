@@ -150,7 +150,7 @@
       "id": 4,
       "title": "Programming Contest",
       "description": "The 2022 ICPC Egyption Collegiate Programming Contest",
-      "image": "icpc2021.jpg"
+      "image": "icpc2022x.jpg"
     },
     {
       "id": 5,
@@ -191,138 +191,161 @@
   ],
   "projects": [
     {
+      "id": 1,
       "title": "aagento",
       "liveLink": "https://aagento-i2a4.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/aagento",
       "imgUrl": "aagento.png"
     },
     {
+      "id": 2,
       "title": "blognest",
       "liveLink": "https://blognest-three.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/blognest",
       "imgUrl": "blognest.png"
     },
     {
+      "id": 3,
       "title": "blognest apis",
       "liveLink": "https://blognest-apis-production.up.railway.app/",
       "gitLink": "https://github.com/bola-nabil/BlogNest-apis",
       "imgUrl": "blognest-apis.png"
     },
     {
+      "id": 4,
       "title": "Ebsar",
       "liveLink": "https://ebsar-frontend-q1cg.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/ebsar-frontend",
       "imgUrl": "ebsar.png"
     },
     {
+      "id": 5,
       "title": "Ebsar Apis",
       "liveLink": "https://ebsar-production.up.railway.app/",
       "gitLink": "https://github.com/bola-nabil/ebsar",
       "imgUrl": "ebsar-apis.png"
     },
     {
+      "id": 6,
       "title": "Clock",
       "liveLink": "https://bola-nabil.github.io/clock/",
       "gitLink": "https://github.com/bola-nabil/clock",
       "imgUrl": "clock.png"
     },
     {
+      "id": 7,
       "title": "Drum Machine",
       "liveLink": "https://bola-nabil.github.io/drum-machine/",
       "gitLink": "https://github.com/bola-nabil/drum-machine",
       "imgUrl": "drum-machine.png"
     },
     {
+      "id": 8,
       "title": "Random Quote",
       "liveLink": "https://bola-nabil.github.io/random-quote-machine/",
       "gitLink": "https://github.com/bola-nabil/random-quote-machine",
       "imgUrl": "random-quote-machine.png"
     },
     {
+      "id": 9,
       "title": "Technoit",
       "liveLink": "https://bola-nabil.github.io/Technoit/",
       "gitLink": "https://github.com/bola-nabil/Technoit",
       "imgUrl": "technoit.png"
     },
     {
+      "id": 10,
       "title": "Portfolio Template",
       "liveLink": "https://bola-nabil.github.io/portfolio-design/",
       "gitLink": "https://github.com/bola-nabil/portfolio-design",
       "imgUrl": "portfolio-template.png"
     },
     {
+      "id": 11,
       "title": "Cosmix",
       "liveLink": "https://bola-nabil.github.io/cosmix/",
       "gitLink": "https://github.com/bola-nabil/cosmix",
       "imgUrl": "cosmix.png"
     },
     {
+      "id": 12,
       "title": "Movie App",
       "liveLink": "https://bola-nabil.github.io/Movie-App/",
       "gitLink": "https://github.com/bola-nabil/Movie-App/",
       "imgUrl": "movie-app.jpg"
     },
     {
+      "id": 13,
       "title": "Interviews Website",
       "liveLink": "https://interviews-blush.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/Interviews/",
       "imgUrl": "interviews.jpg"
     },
     {
+      "id": 14,
       "title": "My Portfolio",
       "liveLink": "https://bola-nabil.vercel.app/",
       "gitLink": "https://github.com/bola-nabil/bola-nabil.git",
-      "imgUrl": "myWebsite.jpg"
+      "imgUrl": "my-portfolio.jpg"
     },
     {
+      "id": 15,
       "title": "Kasper",
       "liveLink": "https://bola-nabil.github.io/Kasper/",
       "gitLink": "https://github.com/bola-nabil/Kasper.git",
       "imgUrl": "kasper.jpg"
     },
     {
+      "id": 16,
       "title": "Dashboard",
       "liveLink": "https://bola-nabil.github.io/Dashboard/",
       "gitLink": "https://github.com/bola-nabil/Dashboard.git/",
       "imgUrl": "dashboard.jpg"
     },
     {
-      "title": "Protfolio Design",
+      "id": 17,
+      "title": "Portfolio Design",
       "liveLink": "https://bola-nabil.github.io/protfolio/",
       "gitLink": "https://github.com/bola-nabil/protfolio.git/",
-      "imgUrl": "protofilo.jpg"
+      "imgUrl": "portfolio.jpg"
     },
     {
+      "id": 18,
       "title": "Leon",
       "liveLink": "https://bola-nabil.github.io/leon/",
       "gitLink": "https://github.com/bola-nabil/leon.git",
       "imgUrl": "leon.jpg"
     },
     {
+      "id": 19,
       "title": "Calculator",
       "liveLink": "https://github.com/bola-nabil/calculator.git/",
       "gitLink": "https://github.com/bola-nabil/calculator.git/",
       "imgUrl": "calculator_project.jpg"
     },
     {
+      "id": 20,
       "title": "Bank System Managment",
       "liveLink": "https://github.com/bola-nabil/Bank-System.git/",
       "gitLink": "https://github.com/bola-nabil/Bank-System.git/",
-      "imgUrl": "bankSystem.jpg"
+      "imgUrl": "bank-system.jpg"
     },
     {
+      "id": 21,
       "title": "Leetcode Problem Solutions",
       "liveLink": "https://github.com/bola-nabil/leetcode.git/",
       "gitLink": "https://github.com/bola-nabil/leetcode.git/",
       "imgUrl": "leetcode.jpg"
     },
     {
+      "id": 22,
       "title": "Codeforces Problem Solutions",
       "liveLink": "https://github.com/bola-nabil/codeforces.git/",
       "gitLink": "https://github.com/bola-nabil/codeforces.git/",
       "imgUrl": "codeforces.jpg"
     },
     {
+      "id": 23,
       "title": "Atcoder Problem Solutions",
       "liveLink": "https://github.com/bola-nabil/atcoder.git",
       "gitLink": "https://github.com/bola-nabil/atcoder.git",
