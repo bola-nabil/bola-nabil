@@ -1,16 +1,10 @@
 .contact-message {
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin: 50px 0 60px 0;
 }
 
 .contact-message .message-box {
     box-shadow: 5px 5px 10px #b9b5b5;
     padding: 20px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
 
 .contact-message .message-box input[type='text'],
@@ -33,8 +27,9 @@
 }
 
 .contact-message .message-box textarea {
-    height: 100px;
+    height: 140px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .contact-message .message-box input:focus,
@@ -46,11 +41,6 @@
 .contact-message .message-box .submit input[type='submit'] {
     width: 180px;
     height: 60px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
     background-color: var(--main-color);
     color: var(--second-color);
     background-color: var(--main-color);
@@ -63,24 +53,6 @@
     background-color: #fbfbfb;
     border: 1px solid var(--main-color) !important;
     transition: 0.6s linear;
-    -webkit-transition: 0.6s linear;
-    -moz-transition: 0.6s linear;
-    -ms-transition: 0.6s linear;
-    -o-transition: 0.6s linear;
-}
-
-.contact-message .map-box {
-    box-shadow: 5px 5px 10px #b9b5b5;
-}
-
-.contact-message .map-box iframe {
-    height: 400px;
-    width: 100%;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 @media (max-width: 600px) {
