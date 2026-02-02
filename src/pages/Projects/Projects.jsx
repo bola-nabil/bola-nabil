@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import useData  from "../../hooks/useData";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +9,10 @@ import { Row, Col } from "react-bootstrap";
 import {projectsMap} from "../../utilts/projectsMap";
 
 const Projects = () => {
-    const {content: data} = useData();
+  const {content: data} = useData();
+
+  const topRef = useRef(null);
+
 
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(0);
@@ -20,6 +23,15 @@ const Projects = () => {
     useEffect(() => {
       setCurrentPage(0);
   }, [projects.length]);
+
+
+      useEffect(() => {
+      topRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+  }, [currentPage]);
+
 
   const nextPage = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages - 1));
@@ -32,7 +44,7 @@ const Projects = () => {
 
 
   return (
-    <main className="projects">
+    <main className="projects" ref={topRef}>
       <div className="container">
         <PageTitle title="Projects" first="My " second="Projects" />
         <div className="mt-4">
