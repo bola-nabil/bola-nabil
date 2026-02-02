@@ -1,11 +1,6 @@
 .resume-section .resume-box {
   box-shadow: 5px 5px 10px #b9b5b5;
   padding: 10px 20px;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
 }
 
 .resume-box .resume-title {

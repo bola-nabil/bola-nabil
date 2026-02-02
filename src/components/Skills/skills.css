@@ -1,7 +1,4 @@
 .skill h3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
   font-size: 16px;
 }
@@ -18,11 +15,6 @@
   height: 15px;
   background-color: #eee;
   position: relative;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   margin-bottom: 15px;
 }
 
