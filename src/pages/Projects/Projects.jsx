@@ -7,6 +7,8 @@ import PageTitle from "../../components/ui/paget-title/PageTitle";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import { Row, Col } from "react-bootstrap";
 import {projectsMap} from "../../utilts/projectsMap";
+import { motion } from "framer-motion";
+import {cardVariants, gridVariants} from "../../utilts/animations";
 
 const Projects = () => {
   const {content: data} = useData();
@@ -44,10 +46,22 @@ const Projects = () => {
 
 
   return (
-    <main className="projects" ref={topRef}>
+    <motion.main
+        className="projects"
+        ref={topRef}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 0.4}}
+    >
       <div className="container">
         <PageTitle title="Projects" first="My " second="Projects" />
         <div className="mt-4">
+          <motion.div
+              variants={gridVariants}
+              initial="hidden"
+              animate="show"
+              key={currentPage}
+          >
           <Row xs="1" md="2" lg="3">
             {data?.projects
               ?.slice(startIndex, endIndex)
@@ -56,20 +70,25 @@ const Projects = () => {
                   key={project.id}
                   className="mt-4 d-flex justify-content-center align-items-center"
                 >
+                  <motion.div variants={cardVariants}>
                   <ProjectCard
-                    src={projectsMap[project.imgUrl]}
-                    alt="not found"
-                    title={project.title}
-                    toSite={project.liveLink}
-                    iconSite={faLink}
-                    className="project-icon center-row"
-                    toGit={project.gitLink}
-                    iconGit={faGithub}
-                  />
+                      src={projectsMap[project.imgUrl]}
+                      alt={project.title}
+                      title={project.title}
+                      toSite={project.liveLink}
+                      iconSite={faLink}
+                      className="project-icon center-row"
+                      toGit={project.gitLink}
+                      iconGit={faGithub}
+                    />
+
+                  </motion.div>
                 </Col>
               ))
             }
           </Row>
+
+          </motion.div>
           <div className="mt-4 text-center">
             <button
               onClick={prevPage}
@@ -90,7 +109,7 @@ const Projects = () => {
         </div>
       </div>
       <Footer />
-    </main>
+    </motion.main>
   );
 };
 
