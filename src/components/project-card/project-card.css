@@ -3,42 +3,80 @@
   max-width: 320px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 30px rgba(0,0,0,0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.project-img-box {
+  overflow: hidden;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .project-img {
-  height: 180px;
   width: 100%;
+  height: 180px;
   object-fit: cover;
-  transition: 0.4s ease;
+  transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-img {
-  transform: scale(1.09);
+  transform: scale(1.1);
 }
 
 .project-title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.iconsBox {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 0.5rem;
 }
 
 .icon-wrapper {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: #dc3545;
   font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .icon-wrapper:hover {
   background: #b82f3a;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-img {
+    height: 150px;
+  }
+
+  .icon-wrapper {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+}
+
