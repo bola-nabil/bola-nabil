@@ -333,21 +333,21 @@
     {
       "id": 21,
       "title": "Leetcode Problem Solutions",
-      "liveLink": "https://github.com/bola-nabil/leetcode.git/",
+      "liveLink": "https://leetcode.com/u/bola-nabil/",
       "gitLink": "https://github.com/bola-nabil/leetcode.git/",
       "imgUrl": "leetcode.jpg"
     },
     {
       "id": 22,
       "title": "Codeforces Problem Solutions",
-      "liveLink": "https://github.com/bola-nabil/codeforces.git/",
+      "liveLink": "https://codeforces.com/profile/bolinabil860",
       "gitLink": "https://github.com/bola-nabil/codeforces.git/",
       "imgUrl": "codeforces.jpg"
     },
     {
       "id": 23,
       "title": "Atcoder Problem Solutions",
-      "liveLink": "https://github.com/bola-nabil/atcoder.git",
+      "liveLink": "https://atcoder.jp/users/bolaNabil",
       "gitLink": "https://github.com/bola-nabil/atcoder.git",
       "imgUrl": "atcoder.jpg"
     }
