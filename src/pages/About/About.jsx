@@ -5,6 +5,8 @@ import PageTitle from "../../components/ui/paget-title/PageTitle";
 import AboutMe from "../../components/about-me/AboutMe";
 import  useData from "../../hooks/useData";
 import myPhoto from "../../assets/images/my-photo.jpg";
+import { motion } from "framer-motion";
+import {container, aboutItem} from "../../utilts/animations";
 import "./about.css";
 
 const About = () => {
@@ -16,10 +18,20 @@ const About = () => {
         <div className="container">
           <PageTitle title="About" first="About " second="Me" />
           <div className="about-section center-row">
-            <figure className="box-image">
-              <img src={myPhoto} alt="Bola Nabil profile" />
-            </figure >
-            <div className="about-box rounded-3">
+            <motion.figure
+                className="box-image"
+                initial={{opacity: 0, x: -40}}
+                animate={{opacity: 1, x: 0}}
+                transition={{duration: 0.6}}
+            >
+                <img src={myPhoto} alt="Bola Nabil profile" className="object-fit-cover rounded-3" />
+            </motion.figure>
+            <motion.div
+              className="about-box rounded-3"
+              initial={{opacity: 0, x: 40}}
+              animate={{opacity: 1, x: 0}}
+              transition={{duration: 0.6, delay: 0.2 }}
+            >
               <div className="title p-4 fs-5 text-secondary">
                 <p>
                   Hi! My name is bola nabil. I graduated from the Department of
@@ -44,16 +56,24 @@ const About = () => {
                   Show Cv
                 </Link>
               </div>
-            </div>
-
+            </motion.div>
           </div>
-          <div className="about-info">
-            {
-              data?.["about-me"]?.map((info) => (
-                <AboutMe key={info.id} title={info.title} content={info.content} linkPath={info.link}/>
-              ))
-            }
-          </div>
+          <motion.div
+              className="about-info rounded-3"
+              variants={container}
+              initial="hidden"
+              animate="show"
+          >
+            {data?.["about-me"]?.map((info) => (
+                <motion.div key={info.id} variants={aboutItem}>
+                  <AboutMe
+                    title={info.title}
+                    content={info.content}
+                    linkPath={info.link}
+                  />
+                </motion.div>
+              ))}
+          </motion.div>
         </div>
       </main>
       <Footer />
