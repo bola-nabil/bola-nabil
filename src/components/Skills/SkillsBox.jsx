@@ -6,7 +6,7 @@ import "./skills-box.css";
 const SkillsBox = ({title, dataLink, icon}) => {
     const isKnowledge = Boolean(icon);
   return (
-    <div className="resume-box">
+    <div className="resume-box rounded-3">
         <div className="resume-title">
             <h3>{title}</h3>
         </div>

@@ -9,6 +9,8 @@ import Experience from "../../components/experience/Experience";
 import PageTitle from "../../components/ui/paget-title/PageTitle";
 import useData from "../../hooks/useData";
 import {certificatesMap} from "../../utilts/certificatesMap";
+import { motion } from "framer-motion";
+import {experienceContainer, experienceItem} from "../../utilts/animations";
 import "./resume.css";
 
 const Resume = () => {
@@ -58,20 +60,31 @@ const Resume = () => {
   );
 
   return (
-    <main className="resume">
+    <motion.main
+      className="resume"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 0.4}}
+    >
       <div className="container">
         <PageTitle title="Resume" first="MY " second="Resume" />
-        <div className="resume-section">
-
+        <motion.div
+          className="resume-section"
+          variants={experienceContainer}
+          initial="hidden"
+          animate="show"
+        >
           {
             data?.experience.map((experience) => (
-              <Experience
-                key={experience.id}
-                title={experience.title}
-                year={experience.year}
-                company={experience.company}
-                description={experience.description}
+              <motion.div key={experience.id} variants={experienceItem}>
+                <Experience
+                    key={experience.id}
+                    title={experience.title}
+                    year={experience.year}
+                    company={experience.company}
+                    description={experience.description}
                 />
+                </motion.div>
             ) )
           }
 
@@ -80,11 +93,16 @@ const Resume = () => {
           <SkillsBox title="Professional Skills" dataLink={data?.skills?.professional}/>
           <SkillsBox title="Knowledge" dataLink={data?.skills?.knowledges} icon={faBolt}/>
 
-        </div>
+        </motion.div>
         <PageTitle title="Certificates" first="MY " second="Certificates" />
 
         <div className="certificates center-col">
-          <div className="certificate center-row gap-3">
+          <motion.div
+            className="certificate center-row gap-3"
+            initial={{opacity: 0, x: 30}}
+            animate={{opacity: 1, x: 0}}
+            transition={{duration: 0.4}}
+          >
             {displayedCertificates?.map((img) => (
               <Certifcate
                 key={img?.id}
@@ -92,19 +110,21 @@ const Resume = () => {
                 alt={img?.title}
               />
             ))}
-          </div>
+
+          </motion.div>
           <div className="icons center-row fs-5">
-            <div onClick={handlePrevious}>
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} onClick={handlePrevious}>
               <FontAwesomeIcon icon={faAngleLeft} />
-            </div>
-            <div onClick={handleNext}>
-              <FontAwesomeIcon icon={faAngleRight} />
-            </div>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} onClick={handleNext}>
+                <FontAwesomeIcon icon={faAngleRight} />
+            </motion.div>
           </div>
         </div>
       </div>
       <Footer />
-    </main>
+    </motion.main>
   );
 };
 
