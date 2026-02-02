@@ -36,10 +36,10 @@ const Projects = () => {
       <div className="container">
         <PageTitle title="Projects" first="My " second="Projects" />
         <div className="mt-4">
-          <Row sm="2" lg="3">
+          <Row xs="1" md="2" lg="3">
             {data?.projects
               ?.slice(startIndex, endIndex)
-              .map((project, index) => (
+              .map((project) => (
                 <Col
                   key={project.id}
                   className="mt-4 d-flex justify-content-center align-items-center"
