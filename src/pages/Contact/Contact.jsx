@@ -18,6 +18,8 @@ const iconMap = {
 }
 
 const Contact = () => {
+
+  const getIcon = (key) => iconMap[key] ?? faEnvelope;
   const {content: data} = useData();
 
   const [name, setName] = useState("");
@@ -50,7 +52,7 @@ const Contact = () => {
         <div className="contact-section">
             {
               data?.contact?.map((contact) => (
-                <ContactCard icon={iconMap[contact.icon]} title={contact.title} content={contact.content} linkPath={contact.link}/>
+                <ContactCard key={contact.id} icon={getIcon(contact.icon)} title={contact.title} content={contact.content} linkPath={contact.link}/>
               ))
             }
         </div>
@@ -63,6 +65,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Name*"
                   value={name}
+                  aria-label="Your Name"
                   onChange={(e) => setName(e.target.value)}
                   required
                 />
@@ -70,6 +73,7 @@ const Contact = () => {
                   type="email"
                   placeholder="Email*"
                   value={email}
+                  aria-label="Your email address"
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
@@ -79,6 +83,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Subject*"
                   value={subject}
+                  aria-label="Message subject"
                   onChange={(e) => setSubject(e.target.value)}
                   required
                 />
@@ -86,12 +91,13 @@ const Contact = () => {
               <textarea
                 className="w-100"
                 placeholder="Message*"
+                aria-label="Your Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
               <div className="submit center-row">
-                <input type="submit" value="Send Message" className="fw-bold border-0 center-row" />
+                <input type="submit" value="Send Message" className="fw-bold border-0 center-row rounded-4" />
               </div>
             </form>
             {isSubmitted && (
