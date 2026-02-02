@@ -9,7 +9,7 @@ import HomeLink from "../../components/home-link/HomeLink";
 import useData  from "../../hooks/useData";
 import myPhoto from "../../assets/images/my-photo.jpg";
 import { motion } from "framer-motion";
-import {container, item} from "../../utilts/animations";
+import {container, homeItem} from "../../utilts/animations";
 import "./home.css";
 
 const socialIcons = {
@@ -57,7 +57,7 @@ const Home = () => {
             {data?.social?.map((link) => (
                 <motion.div
                   key={link.id}
-                  variants={item}
+                  variants={homeItem}
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                 >
