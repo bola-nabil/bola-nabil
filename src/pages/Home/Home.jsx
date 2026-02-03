@@ -62,8 +62,10 @@ const Home = () => {
                   whileTap={{ scale: 0.9 }}
                 >
                   <HomeLink
+                    key={link.id}
                     to={link.website}
                     icon={socialIcons[link.icon]}
+                    aria={link.title}
                   />
                 </motion.div>
               ))}
