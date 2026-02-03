@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import useData  from "../../hooks/useData";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -19,7 +19,10 @@ const Projects = () => {
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(0);
 
-  const projects = data?.projects ?? [];
+  const projects = useMemo(() => {
+    return [...(data?.projects ?? [])].reverse();
+  }, [data?.projects]);
+
   const totalPages = Math.ceil(projects.length / pageSize);
 
     useEffect(() => {
@@ -63,7 +66,7 @@ const Projects = () => {
               key={currentPage}
           >
           <Row xs="1" md="2" lg="3">
-            {data?.projects
+            {projects
               ?.slice(startIndex, endIndex)
               .map((project) => (
                 <Col
