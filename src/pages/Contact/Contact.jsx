@@ -9,6 +9,8 @@ import Footer from "../../components/layout/Footer/Footer";
 import PageTitle from "../../components/ui/paget-title/PageTitle";
 import ContactCard from "../../components/contact-card/ContactCard";
 import  useData from "../../hooks/useData";
+import { motion } from "framer-motion";
+import {containerVariants} from "../../utilts/animations";
 import "./contact.css";
 
 const iconMap = {
@@ -49,17 +51,32 @@ const Contact = () => {
       <div className="container">
         <PageTitle title="Contact" first="Get In " second="Touch" />
 
-        <div className="contact-section">
-            {
-              data?.contact?.map((contact) => (
-                <ContactCard key={contact.id} icon={getIcon(contact.icon)} title={contact.title} content={contact.content} linkPath={contact.link}/>
-              ))
-            }
-        </div>
+        <motion.div
+          className="contact-section"
+          variants={containerVariants}
+          initial="hidden"
+          animate="show"
+        >
+          {data?.contact?.map((contact) => (
+            <ContactCard
+              key={contact.id}
+              icon={getIcon(contact.icon)}
+              title={contact.title}
+              content={contact.content}
+              linkPath={contact.link}
+            />
+          ))}
+        </motion.div>
 
         <div className="contact-message">
-          <div className="message-box">
-            <form onSubmit={handleSubmit}>
+          <motion.div 
+              className="message-box"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+          >
+            <form onSubmit={handleSubmit} aria-labelledby="contact-form-title">
               <div className="info-form">
                 <input
                   type="text"
@@ -101,11 +118,11 @@ const Contact = () => {
               </div>
             </form>
             {isSubmitted && (
-              <div style={{ color: "green", marginTop: "10px" }}>
+              <div style={{ color: "green", marginTop: "10px" }} aria-live="polite" role="status">
                 Success! The form was submitted successfully.
               </div>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />
