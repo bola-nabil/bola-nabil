@@ -381,10 +381,10 @@
     "leetcode": "https://www.leetcode.com/bola-nabil"
   },
   "social": [
-    {"id": 1, "website": "https://www.facebook.com/bolanabil404", "icon": "faFacebookF"},
-    {"id": 2, "website": "https://www.youtube.com/@bola-nabil", "icon": "faYoutube"},
-    {"id": 3, "website": "https://www.linkedin.com/in/bolanabil", "icon": "faLinkedinIn"},
-    {"id": 4, "website": "https://github.com/bola-nabil", "icon": "faGithub"}
+    {"id": 1, "website": "https://www.facebook.com/bolanabil404", "icon": "faFacebookF", "title": "facebook"},
+    {"id": 2, "website": "https://www.youtube.com/@bola-nabil", "icon": "faYoutube", "title": "youtube"},
+    {"id": 3, "website": "https://www.linkedin.com/in/bolanabil", "icon": "faLinkedinIn", "title": "Linkedin"},
+    {"id": 4, "website": "https://github.com/bola-nabil", "icon": "faGithub", "title": "github"}
 
   ],
   "cv": {
