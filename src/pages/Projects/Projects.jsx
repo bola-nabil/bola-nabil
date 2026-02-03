@@ -7,11 +7,12 @@ import PageTitle from "../../components/ui/paget-title/PageTitle";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import { Row, Col } from "react-bootstrap";
 import {projectsMap} from "../../utilts/projectsMap";
+import Loading from "../../components/ui/loading/Loading";
 import { motion } from "framer-motion";
 import {cardVariants, gridVariants} from "../../utilts/animations";
 
 const Projects = () => {
-  const {content: data} = useData();
+  const {content: data, loading} = useData();
 
   const topRef = useRef(null);
 
@@ -47,6 +48,8 @@ const Projects = () => {
   const startIndex = currentPage * pageSize;
   const endIndex = startIndex + pageSize;
 
+
+  if(loading) return <Loading />
 
   return (
     <motion.main
