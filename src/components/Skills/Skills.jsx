@@ -15,6 +15,7 @@ const Skills = ({ title, status, style }) => {
             animate={{ width: style }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             role="progressbar"
+            aria-label="skills range"
             aria-valuenow={parseInt(style)}
             aria-valuemin="0"
             aria-valuemax="100"
