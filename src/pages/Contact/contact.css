@@ -42,7 +42,8 @@
     width: 180px;
     height: 60px;
     background-color: var(--main-color);
-    color: var(--second-color);
+    color: black;
+    font-weight: bold;
     background-color: var(--main-color);
     font-size: 18px;
     cursor: pointer;
